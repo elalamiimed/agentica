@@ -1,0 +1,60 @@
+# ---------------------------------------------------------------- secrets (never commit)
+hsiyc_writer/.deepseek_key
+hsiyc_writer/deepseek_key.txt
+hsiyc_writer/.wechat_appid
+hsiyc_writer/.wechat_secret
+.deepseek_key
+.wechat_appid
+.wechat_secret
+*.pem
+*.key
+.env
+
+# ------------------------------------------------------------- generated deliverables
+# Bundles are regenerated artefacts and run to ~100 MB (PDF, PPTX, PNG artwork).
+output/
+output*/ 
+
+# ------------------------------------------------------------- scratch and evidence
+# The corpus lives in _work/*.txt and the analysis scripts are tracked, so this folder is
+# excluded piece by piece: blanket-ignoring it would ship a repository with no exemplars.
+_work/*
+!_work/*.txt
+!_work/*.py
+!_work/analysis/
+_work/analysis/sample_pages/
+_work/pages/
+_work/uploads/
+_work/art_preview/
+_work/art_improvements_preview/
+_work/art_cache/
+_work/office_check/
+_work/probe/
+_work/tmp/
+_work/__pycache__/
+_work/*.pdf
+_work/*.json
+!_work/verification/
+_work/verification/png/
+_work/verification/gen/
+_work/verification/out/
+!_work/verify_develop/
+_work/verify_develop/*.json
+!_work/webphotos/
+
+# -------------------------------------------------------------------- python bytecode
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ------------------------------------------------------- editors, Office, Windows, macOS
+.vscode/
+.idea/
+*.swp
+~$*
+*.tmp
+Thumbs.db
+desktop.ini
+.DS_Store

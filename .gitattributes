@@ -1,0 +1,18 @@
+# Keep the repository byte-identical across Windows and Linux: the generated documents
+# embed text lengths and the tests compare strings, so a stray CRLF is a real difference.
+* text=auto
+
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+# Binary formats git must never try to diff or normalise.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+*.ttf binary
+*.otf binary

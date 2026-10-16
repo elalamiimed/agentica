@@ -1,0 +1,379 @@
+{
+  "_meta": {
+    "corpus": "17 approved HSIYC (HITSZ International Youth Club / 哈工大（深圳）国际青年俱乐部) WeChat article PDFs rendered to 188 page images",
+    "page_images": "_work/pages/<NN_slug>/page-NN.jpg (100 dpi JPEG, 850x1100 px)",
+    "scale": {
+      "page_px": [850, 1100],
+      "page_pt": [612, 792],
+      "px_at_100dpi_to_pt": 0.72,
+      "px_at_100dpi_to_css_px": 0.96,
+      "note": "CSS px = measured px * 0.96. Validated: body glyph band 16 px -> 15.4 CSS px (WeChat default 15 px); line pitch 24 px -> 23 CSS px (line-height 1.6)."
+    },
+    "method": "Pillow 12.3.0 + numpy 2.3.5. Colours are modal RGB of measured pixel sets (middle row of a rule; darkest-12% modal for glyph cores). Geometry is detected pixel runs. Scripts: _work/analysis/sample_pages/_scripts/{lines,probe,rowprofile,cardinfo,bands,bandsum,gutters,photogrid,rank,inventory}.py",
+    "caveats": [
+      "57 of 188 pages (30.3%) are pure white filler pages; articles 08_ (26/29), 09_ (14/18), 10_ (8/12) are largely unusable as visual references.",
+      "24 pages still contain a failed-image placeholder frame (rose #83395E).",
+      "Articles 14_, 16_, 17_ render body text at #AAAAAA-#B2B2B2 (captured mid fade-in animation). Do NOT adopt those as body colours.",
+      "No multi-photo grid with white gutters exists: gutters.py found only 28 candidate gutters in 188 pages, all 60-94 px long and inside poster artwork."
+    ]
+  },
+
+  "colors": {
+    "background": "#FFFFFF",
+    "body_text": "#4C4C4C",
+    "body_text_range": ["#444444", "#585858"],
+    "body_text_en": "#4E4E4E",
+    "h1_title": "#141414",
+    "byline_grey": "#7F7F7F",
+    "brand_navy_text": "#1B3870",
+    "brand_navy_text_range": ["#083169", "#2A395A"],
+    "navy_rule": "#2E3458",
+    "card_border_navy": "#20314B",
+    "card_border_navy_range": ["#1B334B", "#233355"],
+    "card_body_text_cn": "#1B334B",
+    "eyebrow_grey": "#A8A8A8",
+    "toc_eyebrow_grey": "#818181",
+    "toc_head": "#1E1E1E",
+    "toc_link": "#373737",
+    "carousel_hint": "#3F426B",
+    "list_separator": "#EEEEEE",
+    "accent_rose": "#84365E",
+    "accent_teal": "#006BA1",
+    "accent_teal_secondary": "#2D5A71",
+    "accent_orange": "#E98A52",
+    "accent_orange_border": "#CD9064",
+    "accent_orange_text": "#A65516",
+    "accent_red": "#F44E42",
+    "accent_blue": "#139DE5",
+    "accent_yellow_solid": "#FCCD03",
+    "accent_yellow_poster": "#FFEE8A",
+    "accent_yellow_poster_secondary": ["#FFF0AF", "#FEE566", "#FFF9CB", "#FFF4B4"],
+    "accent_campaign_orange": "#F9A221",
+    "accent_lavender": "#496897",
+    "accent_pale_blue": "#BEE3FD",
+    "accent_pale_pink": "#FEAEB1",
+    "card_border_light_blue": "#DFE4EA",
+    "placeholder_frame_rose": "#83395E",
+    "text_struck_through_do_not_use": "#ABABAB"
+  },
+
+  "typography": {
+    "_units": "size_px values are CSS px estimates = measured glyph band px * 0.96; band_px is the raw measurement. font values are INFERRED from raster stroke shapes, not from embedded font data.",
+    "h1": {
+      "size_px": 22,
+      "band_px": 27,
+      "weight": "bold",
+      "font": "system CJK sans (PingFang SC / Source Han Sans SC class) - inferred",
+      "color": "#141414",
+      "align": "left",
+      "x0_px": 114
+    },
+    "byline": {
+      "size_px": 14,
+      "band_px": [12, 19],
+      "weight": "regular",
+      "font": "system CJK sans - inferred",
+      "color": "#7F7F7F"
+    },
+    "section_numbered_header_label": {
+      "size_px": 20,
+      "band_px": 43,
+      "note": "band covers the 2-line label block, not one line",
+      "weight": "bold",
+      "color": "#0E2278",
+      "group_width_px": 280,
+      "centered_on_x": 427
+    },
+    "section_numbered_header_sublabel": {
+      "size_px": 15,
+      "band_px": 16,
+      "weight": "bold italic",
+      "color": "#20276B"
+    },
+    "section_heading_en_display": {
+      "size_px": 25,
+      "band_px": 26,
+      "weight": "bold",
+      "color": "#193576",
+      "align": "left"
+    },
+    "section_heading_cn_display": {
+      "size_px": 27,
+      "band_px": 28,
+      "weight": "bold",
+      "color": "#083169",
+      "align": "left"
+    },
+    "bilingual_stack_line": {
+      "size_px": [16, 23],
+      "band_px": [17, 24],
+      "weight": "bold",
+      "color": "#1B3049",
+      "align": "center"
+    },
+    "body_cn": {
+      "size_px": 15,
+      "band_px": 16,
+      "weight": "regular",
+      "font": "system CJK sans (PingFang SC / Source Han Sans SC class) - inferred",
+      "color": "#4C4C4C",
+      "line_height": 1.6,
+      "line_pitch_px": 24,
+      "align": "left"
+    },
+    "body_en": {
+      "size_px": 15,
+      "band_px": 16,
+      "weight": "regular",
+      "color": "#4E4E4E",
+      "line_height": 1.6,
+      "line_pitch_px": 24
+    },
+    "card_body_cn": { "size_px": 16, "band_px": 17, "color": "#1B334B", "weight": "regular" },
+    "eyebrow_all_caps": {
+      "size_px": 11,
+      "band_px": 11,
+      "weight": "bold",
+      "letter_spacing": "yes",
+      "color": "#A8A8A8",
+      "alt_color": "#A65516"
+    },
+    "toc_eyebrow": { "size_px": 11.5, "band_px": 12, "weight": "regular", "color": "#818181" },
+    "toc_column_head": { "size_px": 9, "band_px": 9, "weight": "bold", "color": "#1E1E1E" },
+    "toc_link_title": { "size_px": 17, "band_px": 18, "weight": "regular", "color": "#373737", "max_lines": 2 },
+    "carousel_hint": { "size_px": 9, "band_px": 9, "weight": "regular", "color": "#3F426B" },
+    "credits_row": { "size_px": [11, 15], "band_px": [11, 16], "weight": "regular", "color": "#4A4A4A", "color_range": ["#4A4A4A", "#585858"] },
+    "signoff_line": { "size_px": 15, "band_px": 16, "weight": "bold", "color": "#1F3276", "line_pitch_px": 24 },
+    "numbered_list_row": { "size_px": 15, "band_px": 16, "weight": "regular", "row_pitch_px": 56 }
+  },
+
+  "spacing": {
+    "content_width_px": 624,
+    "content_x": [112, 735],
+    "text_measure_px": 583,
+    "text_x": [134, 717],
+    "text_inset_from_content_px": 22,
+    "paragraph_gap_px": 32,
+    "line_gap_in_paragraph_px": 8,
+    "line_pitch_body_px": 24,
+    "credits_row_pitch_px": 25,
+    "signoff_line_pitch_px": 24,
+    "numbered_list_row_pitch_px": 56,
+    "rounded_card_gap_px": 21,
+    "card_interior_padding_px": 8,
+    "first_line_indent_px": 0,
+    "paragraph_margin_extra_px": 24
+  },
+
+  "rules": {
+    "signoff_rule_double_above": [
+      { "h_px": 7, "color": "#1B3870" },
+      { "h_px": 3, "color": "#313B56" }
+    ],
+    "signoff_rule_double_below": [
+      { "h_px": 6, "color": "#1B396D" },
+      { "h_px": 2, "color": "#29395A" }
+    ],
+    "signoff_rule_single_variant": [{ "h_px": 1, "color": "#2E3458" }],
+    "numbered_header_double_rule": [
+      { "h_px": 6, "color": "#213769" },
+      { "h_px": 2, "color": "#2A395A" }
+    ],
+    "numbered_row_hairline": { "h_px": 1, "color": "#293241", "width_px": 291, "x": [138, 428] },
+    "list_separator": { "h_px": 3, "color": "#EEEEEE" },
+    "card_border": { "h_px": 1, "color": "#20314B" },
+    "card_bottom_border": { "h_px": 1, "color": "#233355" },
+    "card_inner_rule": { "h_px": 4, "color": "#1B344D" },
+    "teal_section_rule": { "h_px": 6, "color": "#006BA1", "x": [130, 717] },
+    "orange_band": { "h_px": 13, "color": "#E98A52", "x": [150, 731] },
+    "yellow_solid_band": { "h_px": 68, "color": "#FCCD03" },
+    "red_rule": { "h_px": 6, "color": "#F44E42", "x": [134, 719] },
+    "blue_rule": { "h_px": 5, "color": "#139DE5", "x": [137, 719] }
+  },
+
+  "photo_grid": {
+    "cols": 1,
+    "gutter_px": null,
+    "radius_px": 0,
+    "finding": "No multi-photo row with white gutters exists in the corpus. gutters.py (paper-white gutter 2-40 px wide, >=60 px long, flanked by ink on both sides) returned 9 vertical + 19 horizontal hits across 188 pages, every one 60-94 px long and inside poster artwork. Photo layout in the approved corpus is one full-bleed image per block.",
+    "full_bleed_photo": { "width_px": 624, "x": [112, 735], "aspect_measured": 1.46, "height_px_example": 427, "border": "none", "radius_px": 0, "caption": "none" },
+    "carousel_strip": {
+      "frame_x": [140, 704],
+      "frame_w_px": 565,
+      "frame_h_px": 365,
+      "aspect": 1.55,
+      "border_px": 1,
+      "border_color_measured": ["#7883A5", "#B5BEDB"],
+      "radius_px": 10,
+      "radius_measured_range_px": [8, 11],
+      "fill": "#FFFFFF",
+      "tiles_rendered": 0
+    },
+    "photos_per_article": {
+      "mean": 2.82,
+      "total_full_bleed_blocks": 48,
+      "articles": 17,
+      "range": [0, 8],
+      "per_article": { "01_": 0, "02_": 2, "03_": 2, "04_": 6, "05_": 6, "06_": 2, "07_": 3, "08_": 0, "09_": 0, "10_": 0, "11_": 8, "12_": 6, "13_": 3, "14_": 0, "15_": 6, "16_": 3, "17_": 1 },
+      "pages_with_placeholder_frames": 24
+    },
+    "photos_per_section_distribution": { "0": "most sections", "1": "sections with an image block", "2+": "not observed" }
+  },
+
+  "blocks": [
+    {
+      "name": "wechat_header",
+      "structure": "H1 title line then byline line",
+      "colors": ["#141414", "#7F7F7F", "#FFFFFF"],
+      "notes": "H1 band 22-27 px bold #141414 flush left x0=114; byline band 12-19 px #7F7F7F; title pattern '[系列] | [标题]'; byline 'Original 国际教育中心 哈工大深圳校区国际教育中心 <date> 广东' (most common), '哈工大深圳校区国际教育中心 <date> 广东', or 'Study at HITSZ <date> 广东'"
+    },
+    {
+      "name": "cover_art",
+      "structure": "one full-bleed raster image, width 624 px",
+      "colors": ["#FFFFFF"],
+      "notes": "Must be supplied as an image asset; carries the watermark 公众号·哈工大深圳校区国际教育中心 bottom-right. Appears once at the top, never repeated per page."
+    },
+    {
+      "name": "lead_paragraph",
+      "structure": "CN paragraph block followed by an EN paragraph block",
+      "colors": ["#4C4C4C", "#4E4E4E"],
+      "notes": "15 px / line-height 1.6 / line pitch 24 px / paragraph gap 32 px / no indent / left aligned at x=134"
+    },
+    {
+      "name": "card",
+      "structure": "1 px navy border, square corners, no fill; optional CAPS eyebrow, CN body in navy, EN body in grey, optional 4 px inner rule and footer",
+      "colors": ["#20314B", "#233355", "#1B334B", "#4E4E4E", "#A8A8A8"],
+      "notes": "w=584-585 px; interior #FFFFFF at 66-74%; padding ~8 px vertical"
+    },
+    {
+      "name": "numbered_section_header",
+      "structure": "'01' numeral + CN label + italic EN label, then 4-6 px navy rule + 2 px navy rule, then italic sub-label",
+      "colors": ["#0E2278", "#162A69", "#213769", "#2A395A", "#20276B"],
+      "notes": "group width 280 px, centred on x=427; EN label is the SECOND line (CN above EN); ALL CAPS used only for eyebrow labels, never the heading"
+    },
+    {
+      "name": "numbered_row_header",
+      "structure": "'NN' light numeral + 1 px hairline rule 291 px + right-aligned 'Day N · Country'",
+      "colors": ["#9F9F9F", "#293241", "#303E4B"],
+      "notes": "numeral x0=146; rule x=138-428; right label ends x=719; followed by a centred 3-line bilingual stack in #1B3049"
+    },
+    {
+      "name": "bilingual_section_heading",
+      "structure": "two-line CN + one-line EN (centred, CN above EN) OR one-line EN + one-line CN (left aligned, EN above CN)",
+      "colors": ["#1B3049", "#193576", "#083169"],
+      "notes": "CN-above-EN in 8/17 articles (01,02,03,04,05,11,13,16); EN-above-CN only in article 15. Do not mix within one article."
+    },
+    {
+      "name": "full_bleed_photo",
+      "structure": "single image, content width",
+      "colors": [],
+      "notes": "624 px wide (x=112-735), 22 px wider on each side than the text measure; aspect example 1.46; no border, radius or caption"
+    },
+    {
+      "name": "photo_carousel_strip",
+      "structure": "rounded 1 px outline frame with the hint 'slide right for more pictures' centred on the bottom edge, border interrupted behind the hint",
+      "colors": ["#7883A5", "#3F426B", "#FFFFFF"],
+      "notes": "565x365 px, radius 8-11 px, 0 tiles rendered in the corpus"
+    },
+    {
+      "name": "numbered_list",
+      "structure": "'01 <中文> | <English>' rows with a small chevron flush right and a light grey hairline between rows",
+      "colors": ["#EEEEEE"],
+      "notes": "row band 15-16 px, row pitch 56 px, x=136-665"
+    },
+    {
+      "name": "rounded_card_stack",
+      "structure": "stacked 1 px light border cards, radius ~8 px, gap 21 px; each card holds '第N讲 | Lecture N' + CN line + EN line",
+      "colors": ["#DFE4EA", "#FFFFFF"],
+      "notes": "x=148-704 (557 px), h=84-91 px per card; AcademiaSphere/学域 series only"
+    },
+    {
+      "name": "double_border_card",
+      "structure": "6 px red rule + 5 px blue rule bounding a white card with a navy tab header",
+      "colors": ["#F44E42", "#139DE5"],
+      "notes": "article 07 family only"
+    },
+    {
+      "name": "pill_badge",
+      "structure": "fully rounded outline pill holding '时间 Time' / '地点 Location' / '活动 ACTIVITIES'",
+      "colors": ["#84365E"],
+      "notes": "outline 2-4 px rose; article 06/17 family"
+    },
+    {
+      "name": "signoff_block",
+      "structure": "rule above, 3 centred lines (CN club name / EN club name / brand), rule below",
+      "colors": ["#1F3276", "#1D2A4A", "#1D2856", "#1B3870", "#313B56"],
+      "notes": "rules span 624 px; line pitch 24 px; variants: single 1 px rules (01_), double rules (15_), near-black text (03_), 'AcademiaSphere x Nexus Hive' vs 'AcademiaSphere' third line"
+    },
+    {
+      "name": "credits_block",
+      "structure": "6 rows flush left: 文字 | 图片 | 排版 | 一审 | 二审 | 三审",
+      "colors": ["#4A4A4A", "#585858"],
+      "notes": "x=136, pitch 25 px, band 11-16 px; four different label vocabularies exist across the corpus (see VISUAL_PATTERNS.md D.2)"
+    },
+    {
+      "name": "toc_card",
+      "structure": "eyebrow '精彩回顾/活动资讯 · Table of Contents', then Previous (left) / Next (right) heads, then up to 2-line link titles; unboxed",
+      "colors": ["#818181", "#1E1E1E", "#373737"],
+      "notes": "eyebrow band 12 px x=137; heads band 9 px; links band 18 px; left col left-aligned, right col right-aligned ending x=719; optional '修改于<date>' trailer"
+    }
+  ],
+
+  "measured_from": [
+    { "token": "colors.background", "page_image": "_work/pages/*/page-*.jpg (all 188)", "method": "exact-colour census over 163,480,960 px: #FFFFFF = 155,782,637 px = 88.624%" },
+    { "token": "colors.body_text", "page_image": "03_APEC青年说___世界传统手艺体验周完美收官/page-04.jpg", "method": "bands.py text: glyph-core (darkest 8%) modal over all text lines; #4C4C4C 556 px, #494949 547, #4A4A4A 496" },
+    { "token": "colors.body_text (cross-check)", "page_image": "11_国际青年俱乐部___APEC智慧校园创新系列竞赛/page-02.jpg", "method": "bands.py text: #4B4B4B 936, #494949 926, #4A4A4A 914" },
+    { "token": "colors.h1_title", "page_image": "13_国际青年俱乐部___国际学子鹏海模联2026斩获三项大奖/page-1.jpg", "method": "lines.py y=61-87, darkest-12% modal = #141414" },
+    { "token": "typography.h1.size_px / band", "page_image": "13_..._page-1.jpg and 03_..._page-01.jpg", "method": "lines.py line bands: h=27 px (y=61-87) and h=22 px (y=62-83)" },
+    { "token": "colors.brand_navy_text / rules.navy_rule", "page_image": "11_..._page-02.jpg", "method": "lines.py y=215-257 core #0E2278; rowprofile.py y=351-353" },
+    { "token": "rules.numbered_header_double_rule", "page_image": "11_..._page-02.jpg", "method": "lines.py bands y=268-273 (h=6, #213769) and y=276-277 (h=2, #2A395A), x=288-565" },
+    { "token": "rules.numbered_header_double_rule (cross-check)", "page_image": "15_..._page-2.jpg", "method": "lines.py bands y=440-448 (#20336B) and y=450 (#2E325F), x=293-556" },
+    { "token": "rules.navy_rule (1 px variant)", "page_image": "01_APEC青年讲堂___讲座回顾_游戏化思维_从玩家到赢家/page-7.jpg", "method": "rowprofile.py y=859: ink 0.724, x=116-734, #2E3458 = 97% of 611 dark px" },
+    { "token": "colors.card_border_navy", "page_image": "03_..._page-17.jpg", "method": "probe.py box x=134..716 y=86..93 -> darkest10% modal #20314B (59.9%); cardinfo.py; bottom border y=519..526 -> #233355 (47.0%)" },
+    { "token": "colors.card_body_text_cn", "page_image": "03_..._page-17.jpg", "method": "rowprofile.py rows y=352-415 all report #1B334B at 50% share; also 03_..._page-01.jpg y=726-767" },
+    { "token": "spacing.line_pitch / paragraph_gap / no-indent", "page_image": "03_..._page-04.jpg", "method": "lines.py x-window 100-760: line bands y=720-735, 744-759, 768-783 (pitch 24, gap 8); next paragraph gap 32; all x0=128-129" },
+    { "token": "typography.body_cn.size_px", "page_image": "03_..._page-04.jpg", "method": "lines.py band h=16 px x 0.96 = 15.4 CSS px" },
+    { "token": "spacing.content_width / photo bleed", "page_image": "13_..._page-1.jpg", "method": "lines.py photo band y=253-679 h=427 x=112-735 (624 px) vs text x=134-717 (583 px)" },
+    { "token": "photo_grid.carousel_strip", "page_image": "15_..._page-8.jpg", "method": "lines.py/cardinfo.py frame x=140-704 y=372-736 (565x365); rowprofile.py y=370 ink 0.80, y=373-374 ink 0.848 #7883A3; corner offsets 5 px and 11 px" },
+    { "token": "photo_grid carousel hint text", "page_image": "15_..._page-8.jpg", "method": "lines.py band y=736-744 h=9 x=142-708 core #3F426B; bottom border ink 0.249 vs top 0.848 -> border interrupted" },
+    { "token": "photo_grid.cols (negative result)", "page_image": "_work/pages/*/page-*.jpg (all 188)", "method": "gutters.py: 9 vertical + 19 horizontal gutter hits, all 60-94 px long, all inside poster artwork" },
+    { "token": "photo_grid.photos_per_article", "page_image": "_work/pages/*/page-*.jpg (all 188)", "method": "photogrid.py + inventory.py: full-bleed photographic blocks (>=420x150 px, non-overlapping per page) = 48 / 17 articles = 2.82" },
+    { "token": "blocks.signoff_block", "page_image": "15_..._page-8.jpg", "method": "lines.py bands y=832-847 #1F3276, y=856-871 #1D2A4A, y=880-895 #1D2856 (pitch 24); rules y=808-814 h=7 #1B3870 + y=816-818 h=3 #313B56, y=916-921 h=6 #1B396D + y=924-925 h=2 #29395A" },
+    { "token": "blocks.signoff_block (near-black variant)", "page_image": "03_..._page-17.jpg", "method": "probe.py x=300..560 y=552..570 darkest10% modal #3E3E3E; y=585..600 -> #3D3D3D" },
+    { "token": "blocks.credits_block", "page_image": "03_..._page-17.jpg", "method": "lines.py rows y=747-758 (h=12, x=136-280, #4A4A4A), y=768-783 (h=16, #4F4F4F), y=797-808, y=822-835, y=848-860, y=873-883; pitch 25 px; flush left x=136-137" },
+    { "token": "blocks.toc_card", "page_image": "03_..._page-18.jpg", "method": "lines.py eyebrow y=61-72 h=12 x=137-306 #818181; heads y=98-106 h=9 x=147-703 #1E1E1E; titles y=118-135 h=18 #373737" },
+    { "token": "rules.list_separator", "page_image": "13_..._page-4.jpg", "method": "bandsum.py BAND #EEEEEE h=3 y=332-334 x=154-702 (also #E6E6E6 y=343-345)" },
+    { "token": "colors.accent_rose / blocks.pill_badge", "page_image": "06_..._page-1.jpg", "method": "rowprofile.py y=819-822 ink 0.884-0.945, x=128-300, darkmodal #84365E = 94% of 166 dark px" },
+    { "token": "colors.accent_teal / rules.teal_section_rule", "page_image": "05_码_上进步_智汇寒冬_Code_Your_Way_Forward/page-1.jpg", "method": "bandsum.py BAND #006BA1 h=6 y=589-594 x=130-717 and #0065A3 h=6 y=867-872" },
+    { "token": "colors.accent_orange / rules.orange_band", "page_image": "04_APEC青年说___文化绘卷_7天游6国_世界传统手艺体验周/page-02.jpg", "method": "bandsum.py BAND #E38853 h=13 y=39-51 x=150-731 (6 occurrences across 04_)" },
+    { "token": "colors.accent_orange_border / accent_orange_text", "page_image": "11_..._page-02.jpg", "method": "rowprofile.py y=351-353 ink 0.586 x=175-675 #CD9064 (96% of 497 dark px), y=422-425 #C3936D; text band y=373-399 core #A65516" },
+    { "token": "colors.accent_red / rules.red_rule", "page_image": "07_..._page-1.jpg", "method": "rowprofile.py y=1041-1046 ink 0.968 x=134-719, darkmodal #F44E42 (94% of 574 dark px)" },
+    { "token": "colors.accent_blue / rules.blue_rule", "page_image": "07_..._page-1.jpg", "method": "rowprofile.py y=571-575 ink 0.95 x=137-719, darkmodal #139DE5 (97% of 561 dark px)" },
+    { "token": "colors.accent_yellow_solid / poster yellow", "page_image": "05_..._page-1.jpg and 08_..._page-02.jpg", "method": "bands.py BAND #FCCD03 h=68 y=407-474; corpus census #FFEE8A 457,593 px, #FFF0AF 386,654, #FEE566 356,453" },
+    { "token": "colors.card_border_light_blue / blocks.rounded_card_stack", "page_image": "16_..._page-4.jpg", "method": "cardinfo.py box x=148..704 y=690..780: top border #DFE4EA, top border starts at offset 7 px (radius ~7-8), cards at y=690-780 / 796-879 / 904-987 (gap 21)" },
+    { "token": "colors.placeholder_frame_rose", "page_image": "01_..._page-2.jpg", "method": "rowprofile.py y=300-306 x=146..154 darkmodal #83395E; article ink census #B4789A 2474 px and #83395E 2472 px" },
+    { "token": "data-quality.blank_pages", "page_image": "_work/pages/*/page-*.jpg (all 188)", "method": "hs_measure.json: pages with min(RGB)>=245 for 100% of pixels = 57; per article 08_=26/29, 09_=14/18, 10_=8/12" }
+  ],
+
+  "grading_rubric": [
+    { "marker": "footer furniture (bilingual sign-off + navy rules + 6-row credit block)", "weight": 0.20 },
+    { "marker": "精彩回顾/活动资讯 · Table of Contents with Previous/Next", "weight": 0.15 },
+    { "marker": "whiteness discipline (page ~88% #FFFFFF, no fills)", "weight": 0.14 },
+    { "marker": "body typography 15 px / 1.6 / #4C4C4C / block paragraphs / no indent", "weight": 0.13 },
+    { "marker": "bilingual pairing (every CN block has an EN twin)", "weight": 0.12 },
+    { "marker": "numbered/section header grammar", "weight": 0.10 },
+    { "marker": "H1 title + byline format", "weight": 0.08 },
+    { "marker": "photo policy (one full-bleed image per section, 624 px, bleeds 22 px past the text measure)", "weight": 0.08 }
+  ],
+
+  "inconsistencies": [
+    "Two navies in use: royal #1B3870-family for text/rules vs slate #20314B-family for 1 px card borders.",
+    "Bilingual stacking order flips: CN-above-EN in 8/17 articles, EN-above-CN in 15_ (and the 06_/17_ poster text).",
+    "Four different credit-label vocabularies (文字/图片/排版/一审/二审/三审 | 图文/排版/一审/二审/三审 | 文字/编辑/初审/复审/终审 | 文字编辑/图文排版/图文审核) and two separators (| and ：).",
+    "TOC eyebrow has two names: 精彩回顾 vs 活动资讯 (~50/50).",
+    "Sign-off third line: 'AcademiaSphere x Nexus Hive' vs 'AcademiaSphere' vs absent.",
+    "Sub-brand palettes do not share a colour: teal #006BA1, orange #E98A52, red #F44E42 + blue #139DE5, yellow #FFEE8A/#F9A221, rose #84365E, lavender #496897.",
+    "Articles 08_/09_/10_ cannot serve as visual references (26/29, 14/18, 8/12 blank pages).",
+    "Articles 14_/16_/17_ body text measures #AAAAAA-#B2B2B2 (mid fade-in capture) - not a usable token."
+  ]
+}

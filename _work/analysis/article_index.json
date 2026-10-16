@@ -1,0 +1,1231 @@
+[
+ {
+  "file": "APEC青年讲堂___讲座回顾_游戏化思维_从玩家到赢家.txt",
+  "slug": "01_APEC青年讲堂___讲座回顾_游戏化思维_从玩家到赢家",
+  "type": "回顾",
+  "series": "APEC青年讲堂",
+  "headline_cn": "APEC青年讲堂 | 讲座回顾：游戏化思维——从玩家到赢家",
+  "headline_en": "",
+  "has_byline": true,
+  "dateline": "June 15, 2026 · HITSZ",
+  "cn_char_count": 684,
+  "en_word_count": 431,
+  "cn_en_ratio": 1.587,
+  "source_cn_char_count": 815,
+  "source_en_word_count": 451,
+  "source_lines": 183,
+  "sections": [
+   {
+    "heading_cn": "游戏，究竟是什么？",
+    "heading_en": "WHAT IS A GAME?"
+   },
+   {
+    "heading_cn": "科学理论与八角分析法",
+    "heading_en": "THE SCIENCE & THE FRAMEWORK"
+   },
+   {
+    "heading_cn": "学以致用，现场闯关！",
+    "heading_en": "GAMIFICATION IN ACTION"
+   },
+   {
+    "heading_cn": "游戏从来不只是游戏",
+    "heading_en": "Games Were Never Just Games"
+   },
+   {
+    "heading_cn": "下一关，等你来挑战",
+    "heading_en": "WHAT'S NEXT"
+   }
+  ],
+  "section_count": 5,
+  "has_slide_right_hint": false,
+  "has_winners_list": false,
+  "has_special_thanks": false,
+  "has_toc_block": true,
+  "credits": {
+   "文字": "Zhumabay Aruzhan, Yalalt",
+   "图片": "Yalalt, Najmia, Kavindya, Imasha",
+   "排版": "Zhumabay Aruzhan",
+   "一审": "柯炽炜，Samin，Yalalt",
+   "二审": "周宣彤，崔雨旸，高容驷",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "club_pipe",
+  "credits_extra_roles": {},
+  "credit_separators": [
+   "ASCII_comma",
+   "space",
+   "，"
+  ],
+  "extraction_complete": true,
+  "opening_move": "hero stack 'HITSZ Youth Club' + '活动回顾 · Event Recap' + 'June 15, 2026 · HITSZ' (explicit CN-EN dateline), then CN lede naming date, venue, co-host and speaker with full title ('6月15日，A509教室座无虚席…联合主办的 APEC青年讲座系列——游戏化设计：从玩家到赢家。主讲人为哈尔滨工业大学（深圳）未来设计学院副教授陈阳老师。'), then a condensed 2-sentence EN lede.",
+  "closing_move": "'下一关，等你来挑战 / WHAT'S NEXT' CTA that cross-sells the next competition (参赛方式 / 奖项设置 bullets + deadline + mp.weixin URL), then 2-line club block, credits, TOC.",
+  "notes": "Every section heading carries a kicker line 'APEC Youth Lecture | Gamification'. CN has an unmatched bracket '(HSIYC)' and a stray space in '迎来了 哈工大（深圳）'; the EN lede drops the CN '联合主办' (co-hosted) claim."
+ },
+ {
+  "file": "APEC青年讲堂___讲座预告_游戏化思维_从玩家到赢家.txt",
+  "slug": "02_APEC青年讲堂___讲座预告_游戏化思维_从玩家到赢家",
+  "type": "预告",
+  "series": "APEC青年讲堂",
+  "headline_cn": "APEC青年讲堂 | 讲座预告：游戏化思维——从玩家到赢家",
+  "headline_en": "",
+  "has_byline": true,
+  "dateline": "",
+  "cn_char_count": 743,
+  "en_word_count": 427,
+  "cn_en_ratio": 1.74,
+  "source_cn_char_count": 834,
+  "source_en_word_count": 450,
+  "source_lines": 172,
+  "sections": [
+   {
+    "heading_cn": "讲座简介",
+    "heading_en": "Why This Lecture?"
+   },
+   {
+    "heading_cn": "嘉宾简介",
+    "heading_en": "Why Her?"
+   },
+   {
+    "heading_cn": "讲座信息",
+    "heading_en": "Lecture Details"
+   },
+   {
+    "heading_cn": "讲座内容",
+    "heading_en": "Lecture Contents"
+   },
+   {
+    "heading_cn": "讲座信息",
+    "heading_en": "Lecture Details"
+   }
+  ],
+  "section_count": 5,
+  "has_slide_right_hint": false,
+  "has_winners_list": false,
+  "has_special_thanks": false,
+  "has_toc_block": true,
+  "credits": {
+   "文字": "",
+   "图片": "",
+   "排版": "Yalalt",
+   "一审": "Samin, 柯炽炜",
+   "二审": "周宣彤，崔雨旸，高容驷",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "club_pipe",
+  "credits_extra_roles": {
+   "图文": "Yalalt"
+  },
+  "credit_separators": [
+   "ASCII_comma",
+   "space",
+   "，"
+  ],
+  "extraction_complete": true,
+  "opening_move": "No dateline, no hero: three CN rhetorical questions open the article ('为什么游戏让人上瘾，而学习却让人疲惫？…答案就是“游戏化”'), mirrored in EN ('Why are games so addictive while learning feels exhausting?'), then the value proposition.",
+  "closing_move": "Registration logistics block (报名截止时间：2026年6月14日 / 名额限制：仅限80人 / 席位有限，先到先得) then 2-line club block, credits, TOC.",
+  "notes": "COLLISION: '讲座信息 / Lecture Details' is used as a heading TWICE (L93 and L120) in the same article. CN calls the speaker 陈阳博士 while #1 calls her 副教授/陈阳老师 and EN uses 'Dr. Yang Chen'."
+ },
+ {
+  "file": "APEC青年说___世界传统手艺体验周完美收官.txt",
+  "slug": "03_APEC青年说___世界传统手艺体验周完美收官",
+  "type": "收官",
+  "series": "APEC青年说",
+  "headline_cn": "APEC青年说 | 世界传统手艺体验周完美收官",
+  "headline_en": "Seven Days · Six Countries · One Journey",
+  "has_byline": true,
+  "dateline": "2026年5月",
+  "cn_char_count": 1355,
+  "en_word_count": 754,
+  "cn_en_ratio": 1.797,
+  "source_cn_char_count": 1466,
+  "source_en_word_count": 782,
+  "source_lines": 234,
+  "sections": [
+   {
+    "heading_cn": "第一站 · 中国 | China",
+    "heading_en": "The Art of Folding and Cutting"
+   },
+   {
+    "heading_cn": "第二站 · 孟加拉国 | Bangladesh",
+    "heading_en": "Colors of Tradition: Bengali Folk Crafts"
+   },
+   {
+    "heading_cn": "特别嘉宾 · Special Guest",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "第三站 · 摩洛哥 | Morocco",
+    "heading_en": "The Medina Quest: A Moroccan Journey"
+   },
+   {
+    "heading_cn": "第四站 · 印度尼西亚 | Indonesia",
+    "heading_en": "Warna & Warisan: Indonesian Workshop"
+   },
+   {
+    "heading_cn": "第五站 · 吉尔吉斯斯坦 | Kyrgyzstan",
+    "heading_en": "Discover Kyrgyzstan: Nomad Culture"
+   },
+   {
+    "heading_cn": "第六站 · 俄罗斯 | Russia",
+    "heading_en": "Tales of Kokoshnik: Crafts of Russia"
+   },
+   {
+    "heading_cn": "旅程结束，故事永存。",
+    "heading_en": "The journey ends. The story lives on."
+   }
+  ],
+  "section_count": 8,
+  "has_slide_right_hint": false,
+  "has_winners_list": false,
+  "has_special_thanks": false,
+  "has_toc_block": true,
+  "credits": {
+   "文字": "Zhumabay Aruzhan",
+   "图片": "Tanvir, Fatima, Samira, Nadine, Samin, Rane, Douae, Kelvin, Hafsa, Baiel, Al-Azhari, Saputra",
+   "排版": "Zhumabay Aruzhan",
+   "一审": "柯炽炜、Samin、Ahmed（韩沐）",
+   "二审": "周宣彤、崔雨旸、高容驷",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "club_pipe",
+  "credits_extra_roles": {},
+  "credit_separators": [
+   "space",
+   "ASCII_comma",
+   "、"
+  ],
+  "extraction_complete": true,
+  "opening_move": "hero stack '2026 / APEC Canvas of Culture / APEC青年说 / 世界传统手艺体验周完美收官 / Seven Days · Six Countries · One Journey', then a 'CULTURAL JOURNEY' kicker and a CN lede that dates and frames the week ('2026年5月，哈尔滨工业大学（深圳）国际青年俱乐部（HSIYC）为同学们带来了一场精彩纷呈的文化盛宴——APEC文化绘卷！'), then the EN lede.",
+  "closing_move": "'旅程结束，故事永存。/ The journey ends. The story lives on.' + 3-part thanks (participants / volunteers / staff), then 2-line club block, credits, TOC.",
+  "notes": "Each station is a numbered image card (01-06 'Day N · Country'). 特别嘉宾 block is a CN paragraph + EN paragraph with no shared heading. Hero EN title says 'Canvas of Culture' (singular) while the closing EN paragraph says 'APEC Canvas of Cultures'."
+ },
+ {
+  "file": "APEC青年说___文化绘卷_7天游6国_世界传统手艺体验周.txt",
+  "slug": "04_APEC青年说___文化绘卷_7天游6国_世界传统手艺体验周",
+  "type": "预告",
+  "series": "APEC青年说",
+  "headline_cn": "APEC青年说 | 文化绘卷：7天游6国，世界传统手艺体验周",
+  "headline_en": "",
+  "has_byline": true,
+  "dateline": "5月21日",
+  "cn_char_count": 1172,
+  "en_word_count": 518,
+  "cn_en_ratio": 2.263,
+  "source_cn_char_count": 1274,
+  "source_en_word_count": 543,
+  "source_lines": 269,
+  "sections": [
+   {
+    "heading_cn": "Day 1: 中国 | China",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "Day 2: 孟加拉国 | Bangladesh",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "Day 3: 摩洛哥 | Morocco",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "Day 4: 印度尼西亚 | Indonesia",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "Day 5: 吉尔吉斯斯坦 | Kyrgyzstan",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "Day 6: 俄罗斯 | Russia",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "报名必看重要须知",
+    "heading_en": "Crucial Registration Rules"
+   },
+   {
+    "heading_cn": "1.文化礼仪守则",
+    "heading_en": "Cultural Courtesy Rule"
+   },
+   {
+    "heading_cn": "2.诚信出席守则",
+    "heading_en": "Respect the Limited Spots"
+   },
+   {
+    "heading_cn": "报名截止时间",
+    "heading_en": "Registration Deadline"
+   },
+   {
+    "heading_cn": "在此注册",
+    "heading_en": "Register here"
+   },
+   {
+    "heading_cn": "加入群组获取更多信息",
+    "heading_en": "Join the group for further information"
+   }
+  ],
+  "section_count": 12,
+  "has_slide_right_hint": false,
+  "has_winners_list": false,
+  "has_special_thanks": false,
+  "has_toc_block": true,
+  "credits": {
+   "文字": "Samin",
+   "图片": "Saykat, Sanjida, Azaliia, Karen, Younes, NurDoolot",
+   "排版": "Samin",
+   "一审": "柯炽炜",
+   "二审": "周宣彤、高容驷、崔雨旸",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "club_pipe",
+  "credits_extra_roles": {},
+  "credit_separators": [
+   "、"
+  ],
+  "extraction_complete": true,
+  "opening_move": "Hero title in CN ONLY ('文化绘卷：7天环游6国，世界传统手艺体验周' - no EN counterpart), then a marketing hook in CN ('想在短短一周内，不用护照、不买机票就能打卡6个国家的独特风情吗？…') + EN mirror, then a benefit list.",
+  "closing_move": "报名截止时间 / Registration Deadline + 5月19日 下午 6:00 前 (May 19th, 6:00 PM) + scarcity nudge, two CTA lines (在此注册 | Register here / 加入群组获取更多信息), a final invitational line pair, the stacked 'HITSZ INTERNATIONAL YOUTH CLUB (HSIYC)' logo text, credits, TOC.",
+  "notes": "Every Day block is 时间/主题/形式 (CN) then Time/Theme/Format (EN) + a CN paragraph then EN paragraph. EN is letter-spaced in the PDF text layer ('Wa n t t o e x p e r i e n c e'), inflating naive word counts (1547 raw tokens vs 543 de-spaced) - treat this file's en_word_count as an estimate. The 图片 label is letter-spaced as '图 片 |' so a naive role regex misses it."
+ },
+ {
+  "file": "_码_上进步_智汇寒冬_Code_Your_Way_Forward.txt",
+  "slug": "05_码_上进步_智汇寒冬_Code_Your_Way_Forward",
+  "type": "招募",
+  "series": "学域 AcademiaSphere",
+  "headline_cn": "“码”上进步·智汇寒冬 Code Your Way Forward",
+  "headline_en": "Code Your Way Forward",
+  "has_byline": false,
+  "dateline": "1月23日",
+  "cn_char_count": 1122,
+  "en_word_count": 731,
+  "cn_en_ratio": 1.535,
+  "source_cn_char_count": 1190,
+  "source_en_word_count": 743,
+  "source_lines": 317,
+  "sections": [
+   {
+    "heading_cn": "关于我们，学域 (AcademiaSphere)",
+    "heading_en": "About Us, AcademiaSphere (学域)"
+   },
+   {
+    "heading_cn": "“码”上进步 · 智汇寒冬",
+    "heading_en": "Code Your Way Forward"
+   },
+   {
+    "heading_cn": "第一阶段:知识缓存区",
+    "heading_en": "Phase One: The Cache Hub"
+   },
+   {
+    "heading_cn": "",
+    "heading_en": "Room A: The Focus Zone"
+   },
+   {
+    "heading_cn": "",
+    "heading_en": "Room B: The Collaboration Hub"
+   },
+   {
+    "heading_cn": "Fuel Your Studies 为学习充能",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "第二阶段:考前冲刺串讲",
+    "heading_en": "Phase Two: Final Patch"
+   },
+   {
+    "heading_cn": "激励与认可",
+    "heading_en": "Recognition & Rewards"
+   },
+   {
+    "heading_cn": "",
+    "heading_en": "The Strongest Node Program"
+   },
+   {
+    "heading_cn": "及时关注！加入我们的社群",
+    "heading_en": "Stay Updated! Join Our Community"
+   },
+   {
+    "heading_cn": "鸣谢",
+    "heading_en": "Acknowledgments"
+   }
+  ],
+  "section_count": 11,
+  "has_slide_right_hint": false,
+  "has_winners_list": true,
+  "has_special_thanks": true,
+  "has_toc_block": true,
+  "credits": {
+   "文字": "",
+   "图片": "",
+   "排版": "Yalalt",
+   "一审": "柯炽炜",
+   "二审": "高容驷",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "club_pipe",
+  "credits_extra_roles": {
+   "图文": "Yalalt"
+  },
+  "credit_separators": [],
+  "extraction_complete": true,
+  "opening_move": "hero stack: CN title / EN title / '学域：寒假学业支持计划' / letter-spaced 'AcademiaSphere Winter Initiative', then parallel 'About Us' paragraphs (CN first, EN second) positioning 学域 as '由哈工大（深圳）国际青年俱乐部（HSIYC）发起的学业支持项目'.",
+  "closing_move": "Scan-to-join CTA in both languages, a 'community, not just a room' paragraph pair, signature '学域 · AcademiaSphere / AcademiaSphere · 学域.', then 鸣谢/Acknowledgments thanking 国际教育中心 and 信息学部, the 本文最终解释权归 legal line (letter-spaced), credits, TOC with only a Next entry.",
+  "notes": "Most English-first article: several headings exist in EN only (Room A/B, The Strongest Node Program). CN headings use an ASCII colon ('第一阶段:知识缓存区'). TOC block has 'Next' but NO 'Previous' (L316). The copyright line is letter-spaced so naive string search misses it. 8 '第N名：' prize tiers for MINISO rewards."
+ },
+ {
+  "file": "哈工大_深圳_国际青年俱乐部_HSIYC_诚邀您共赴2026_无界校园_青春共行_深圳大学城社团游园会.txt",
+  "slug": "06_哈工大_深圳_国际青年俱乐部_HSIYC_诚邀您共赴2026_无界校园_青春共行_深圳大学城社团游园会",
+  "type": "预告",
+  "series": "无界校园·青春共行 (游园会)",
+  "headline_cn": "哈工大（深圳）国际青年俱乐部（HSIYC）诚邀您共赴2026“无界校园·青春共行”深圳大学城社团游园会",
+  "headline_en": "One Campus, Every Corner of the World.",
+  "has_byline": false,
+  "dateline": "2026年4月26日（周日）18:00-21:30",
+  "cn_char_count": 305,
+  "en_word_count": 168,
+  "cn_en_ratio": 1.815,
+  "source_cn_char_count": 407,
+  "source_en_word_count": 191,
+  "source_lines": 122,
+  "sections": [
+   {
+    "heading_cn": "「无界校园 · 青春共行」",
+    "heading_en": "One Campus, Every Corner of the World."
+   },
+   {
+    "heading_cn": "快来我们的展位！",
+    "heading_en": "Come join us at the booth!"
+   },
+   {
+    "heading_cn": "时间 Time",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "地点 Location",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "我们的展位在B3！",
+    "heading_en": "Our Booth is at B3!"
+   },
+   {
+    "heading_cn": "来了就不要空手而归，精彩活动全在这里！",
+    "heading_en": "Don't just show up — here's what's in store for you!"
+   },
+   {
+    "heading_cn": "活动 ACTIVITIES",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "✦ 游艺竞技 Play & Win ✦",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "✦ 万语留声 Voices of the World ✦",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "✦ 国际风采 World on Stage ✦",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "温馨提醒：礼品数量有限，欢迎提早到场！",
+    "heading_en": "Heads up: Prizes are limited / Arrive Early!"
+   }
+  ],
+  "section_count": 11,
+  "has_slide_right_hint": false,
+  "has_winners_list": false,
+  "has_special_thanks": false,
+  "has_toc_block": true,
+  "credits": {
+   "文字": "",
+   "图片": "",
+   "排版": "Yalalt",
+   "一审": "Samin",
+   "二审": "柯炽炜 崔雨旸",
+   "三审": "周宣彤 卢锦章"
+  },
+  "credits_schema": "club_pipe",
+  "credits_extra_roles": {
+   "图文": "Samin, Yalalt"
+  },
+  "credit_separators": [
+   "ASCII_comma",
+   "space"
+  ],
+  "extraction_complete": true,
+  "opening_move": "Club-name banner in square brackets '[ 哈工大（深圳）国际青年俱乐部 ]', then the hero title in Chinese corner brackets 「无界校园 · 青春共行」 with the EN tagline, then a CN lede announcing the event and the invitation ('…即将盛大开幕…向全校师生发出最诚挚的邀请。') + EN lede.",
+  "closing_move": "Scarcity nudge ('温馨提醒：礼品数量有限，欢迎提早到场！/ Heads up: Prizes are limited Arrive Early!'), then 2-line club block, credits, TOC.",
+  "notes": "CN+EN are frequently INLINE on one heading line rather than stacked ('时间 Time', '地点 Location', '国际风采 World on Stage'). Only article using ✦ bullets and 「」 corner brackets in a heading. NO 'Original' prefix on the WeChat stamp."
+ },
+ {
+  "file": "哈工大_深圳_首届国际文化嘉年华11月8日即将启幕_上_.txt",
+  "slug": "08_哈工大_深圳_首届国际文化嘉年华11月8日即将启幕_上",
+  "type": "预告",
+  "series": "国际文化嘉年华 (Study at HITSZ account)",
+  "headline_cn": "哈工大（深圳）首届国际文化嘉年华11月8日即将启幕（上）",
+  "headline_en": "",
+  "has_byline": false,
+  "dateline": "",
+  "cn_char_count": 0,
+  "en_word_count": 0,
+  "cn_en_ratio": null,
+  "source_cn_char_count": 53,
+  "source_en_word_count": 5,
+  "source_lines": 10,
+  "sections": [],
+  "section_count": 0,
+  "has_slide_right_hint": false,
+  "has_winners_list": false,
+  "has_special_thanks": false,
+  "has_toc_block": false,
+  "credits": {
+   "文字": "周珺童",
+   "图片": "",
+   "排版": "",
+   "一审": "周宣彤 崔雨旸",
+   "二审": "吴潇 高容驷",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "study_at_hitsz_colon",
+  "credits_extra_roles": {
+   "编辑": "许诺言"
+  },
+  "credit_separators": [
+   "space"
+  ],
+  "extraction_complete": false,
+  "opening_move": "UNKNOWN - body did not extract (see notes).",
+  "closing_move": "Only the credit block extracted: 文字：周珺童 / 编辑：许诺言 / 初审：周宣彤 崔雨旸 / 复审：吴潇 高容驷 / 终审：卢锦章",
+  "notes": "TEXT EXTRACTION INCOMPLETE: the .txt holds only the title, the WeChat stamp ('Study at HITSZ Nov 5, 2025, 2:28 PM 广东') and the credit block, while 29 page images exist - the body is rasterised imagery and contributes NO text to this corpus. Body-derived numbers are 0 by construction. ID CAUTION: its page-image directory is numbered 08 while this report's text ID is 7."
+ },
+ {
+  "file": "哈工大_深圳_首届国际文化嘉年华11月8日即将启幕_下_.txt",
+  "slug": "09_哈工大_深圳_首届国际文化嘉年华11月8日即将启幕_下",
+  "type": "预告",
+  "series": "国际文化嘉年华 (Study at HITSZ account)",
+  "headline_cn": "哈工大（深圳）首届国际文化嘉年华11月8日即将启幕（下）",
+  "headline_en": "",
+  "has_byline": false,
+  "dateline": "",
+  "cn_char_count": 0,
+  "en_word_count": 0,
+  "cn_en_ratio": null,
+  "source_cn_char_count": 53,
+  "source_en_word_count": 5,
+  "source_lines": 10,
+  "sections": [],
+  "section_count": 0,
+  "has_slide_right_hint": false,
+  "has_winners_list": false,
+  "has_special_thanks": false,
+  "has_toc_block": false,
+  "credits": {
+   "文字": "周珺童",
+   "图片": "",
+   "排版": "",
+   "一审": "周宣彤 崔雨旸",
+   "二审": "吴潇 高容驷",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "study_at_hitsz_colon",
+  "credits_extra_roles": {
+   "编辑": "许诺言"
+  },
+  "credit_separators": [
+   "space"
+  ],
+  "extraction_complete": false,
+  "opening_move": "UNKNOWN - body did not extract (see notes).",
+  "closing_move": "Only the credit block extracted (identical to the 上 instalment).",
+  "notes": "TEXT EXTRACTION INCOMPLETE: 18 page images, no body text. Same WeChat stamp (Nov 5, 2025, 2:28 PM) as the 上 instalment - published as one story split in two. ID CAUTION: its page-image directory is numbered 09 while this report's text ID is 8."
+ },
+ {
+  "file": "哈工大_深圳_首届国际文化嘉年华_International_Cultural_Carnival___活动摊位与节目招募启动_.txt",
+  "slug": "07_哈工大_深圳_首届国际文化嘉年华_International_Cultural_Carnival___活动摊位与节目招募启动",
+  "type": "招募",
+  "series": "国际文化嘉年华 (Study at HITSZ account)",
+  "headline_cn": "哈工大（深圳）首届国际文化嘉年华 International Cultural Carnival | 活动摊位与节目招募启动！",
+  "headline_en": "Harmony in Diversity, A World in Symphony.",
+  "has_byline": false,
+  "dateline": "2025年11月8日 16:00 - 19:00",
+  "cn_char_count": 469,
+  "en_word_count": 396,
+  "cn_en_ratio": 1.184,
+  "source_cn_char_count": 520,
+  "source_en_word_count": 404,
+  "source_lines": 159,
+  "sections": [
+   {
+    "heading_cn": "活动信息",
+    "heading_en": "Event Information"
+   },
+   {
+    "heading_cn": "【时间 / Date】",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "【地点 / Venue】",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "【主办单位 / Organizers】",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "【协办单位 / Co-organizers】",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "摊位招募",
+    "heading_en": "Booth Recruitment"
+   },
+   {
+    "heading_cn": "1.招募要求",
+    "heading_en": "Requirement"
+   },
+   {
+    "heading_cn": "2.报名方式",
+    "heading_en": "How to Sign Up"
+   },
+   {
+    "heading_cn": "节目征集",
+    "heading_en": "Performance Recruitment"
+   },
+   {
+    "heading_cn": "1.招募要求",
+    "heading_en": "Requirement"
+   },
+   {
+    "heading_cn": "2.节目类型",
+    "heading_en": "Performance Type"
+   },
+   {
+    "heading_cn": "3.报名方式",
+    "heading_en": "How to Sign Up"
+   }
+  ],
+  "section_count": 12,
+  "has_slide_right_hint": false,
+  "has_winners_list": false,
+  "has_special_thanks": false,
+  "has_toc_block": false,
+  "credits": {
+   "文字": "",
+   "图片": "",
+   "排版": "",
+   "一审": "",
+   "二审": "",
+   "三审": ""
+  },
+  "credits_schema": "carnival_colon",
+  "credits_extra_roles": {
+   "文字编辑": "周宣彤",
+   "图文排版": "周宣彤",
+   "图文审核": "高容驷、卢锦章"
+  },
+  "credit_separators": [
+   "、"
+  ],
+  "extraction_complete": true,
+  "opening_move": "Centred, fully-justified CN appeal ('为促进中外文化交流，展现校园国际化魅力…现面向全校国际学生公开征集文化摊位与文艺节目') immediately followed by its EN translation, then a 【】-bracketed info card (time / venue / organizers / co-organizers).",
+  "closing_move": "Registration route + video requirement + '在10月14日前发送至邮箱：isc@hit.edu.cn', then a 3-line colon-schema credit block (文字编辑 / 图文排版 / 图文审核). No club-name block, no TOC block.",
+  "notes": "DIFFERENT PUBLISHER SCHEMA: WeChat stamp is 'Study at HITSZ Sep 29, 2025', not 'Original 国际教育中心 哈工大深圳校区国际教育中心'; credits use '：' not '|' and only 3 roles. 主办单位 = 国际教育中心 + 共青团哈尔滨工业大学（深圳）委员会; 协办单位 = 研究生会 + 信息学部. '1.招募要求 / Requirement' is used TWICE. Several headings are letter-spaced ('IIInnnfffooorrrmmmaaatttiiiooonnn'). ID CAUTION: its page-image directory is numbered 07 while this report's text ID is 9."
+ },
+ {
+  "file": "哈工大_深圳_首届国际文化嘉年华节目预告.txt",
+  "slug": "10_哈工大_深圳_首届国际文化嘉年华节目预告",
+  "type": "预告",
+  "series": "国际文化嘉年华 (Study at HITSZ account)",
+  "headline_cn": "哈工大（深圳）首届国际文化嘉年华节目预告",
+  "headline_en": "Harmony in Diversity, A World in Symphony / HITSZ First International Cultural Carnival / Program List Preview",
+  "has_byline": false,
+  "dateline": "",
+  "cn_char_count": 0,
+  "en_word_count": 15,
+  "cn_en_ratio": 0.0,
+  "source_cn_char_count": 49,
+  "source_en_word_count": 20,
+  "source_lines": 15,
+  "sections": [],
+  "section_count": 0,
+  "has_slide_right_hint": false,
+  "has_winners_list": false,
+  "has_special_thanks": false,
+  "has_toc_block": false,
+  "credits": {
+   "文字": "王羲茜",
+   "图片": "",
+   "排版": "",
+   "一审": "周宣彤 冯洋",
+   "二审": "吴潇 高容驷",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "study_at_hitsz_colon",
+  "credits_extra_roles": {
+   "编辑": "许诺言"
+  },
+  "credit_separators": [
+   "space"
+  ],
+  "extraction_complete": false,
+  "opening_move": "UNKNOWN - body did not extract; the only body-ish text is the 3-line ENGLISH hero ('Harmony in Diversity, A World in Symphony' / 'HITSZ First International Cultural Carnival' / 'Program List Preview') with no Chinese counterpart.",
+  "closing_move": "Only the credit block extracted: 文字：王羲茜 / 编辑：许诺言 / 初审：周宣彤 冯洋 / 复审：吴潇 高容驷 / 终审：卢锦章",
+  "notes": "TEXT EXTRACTION INCOMPLETE: 12 page images, no body text. Hero is EN-only. 初审 uses 冯洋 here instead of 崔雨旸 (as in the other two carnival articles) - the reviewer roster is not stable across instalments."
+ },
+ {
+  "file": "国际青年俱乐部___APEC智慧校园创新系列竞赛.txt",
+  "slug": "11_国际青年俱乐部___APEC智慧校园创新系列竞赛",
+  "type": "竞赛",
+  "series": "APEC智慧校园创新系列",
+  "headline_cn": "国际青年俱乐部 | APEC智慧校园创新系列竞赛",
+  "headline_en": "",
+  "has_byline": true,
+  "dateline": "2026年11月",
+  "cn_char_count": 2261,
+  "en_word_count": 1418,
+  "cn_en_ratio": 1.594,
+  "source_cn_char_count": 2361,
+  "source_en_word_count": 1437,
+  "source_lines": 523,
+  "sections": [
+   {
+    "heading_cn": "APEC | 未来技能挑战赛",
+    "heading_en": "01 Future Skills Challenge"
+   },
+   {
+    "heading_cn": "INNOVATION",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "为什么你要参加？",
+    "heading_en": "Why should you join?"
+   },
+   {
+    "heading_cn": "活动安排",
+    "heading_en": "Event Schedule"
+   },
+   {
+    "heading_cn": "赛制与规则",
+    "heading_en": "Format & Rules"
+   },
+   {
+    "heading_cn": "PRIZES | 奖项",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "02 APEC | 游戏化系统设计大赛",
+    "heading_en": "Gamification Competition"
+   },
+   {
+    "heading_cn": "COOPERATION",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "参赛资格",
+    "heading_en": "Eligibility"
+   },
+   {
+    "heading_cn": "参赛方向",
+    "heading_en": "COMPETITION TRACKS"
+   },
+   {
+    "heading_cn": "先修讲座",
+    "heading_en": "PRELIMINARY LECTURE"
+   },
+   {
+    "heading_cn": "讲座信息",
+    "heading_en": "Lecture Details"
+   },
+   {
+    "heading_cn": "参赛要求",
+    "heading_en": "Submission"
+   },
+   {
+    "heading_cn": "演示视频结构",
+    "heading_en": "DEMO VIDEO STRUCTURE"
+   },
+   {
+    "heading_cn": "评审标准",
+    "heading_en": "JUDING CRITERIA"
+   },
+   {
+    "heading_cn": "内容规范",
+    "heading_en": "Content Guidelines"
+   },
+   {
+    "heading_cn": "PRIZES | 奖项",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "03 APEC | 校园想象画廊",
+    "heading_en": "Campus Imagination Gallery"
+   },
+   {
+    "heading_cn": "OPENNESS",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "参赛要求 | Submission",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "评审标准",
+    "heading_en": "JUDING CRITERIA"
+   },
+   {
+    "heading_cn": "内容规范",
+    "heading_en": "Content Guidelines"
+   },
+   {
+    "heading_cn": "PRIZES | 奖项",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "鸣谢 / 国际教育中心",
+    "heading_en": "Acknowledgments / International Education Center"
+   }
+  ],
+  "section_count": 24,
+  "has_slide_right_hint": false,
+  "has_winners_list": false,
+  "has_special_thanks": true,
+  "has_toc_block": true,
+  "credits": {
+   "文字": "",
+   "图片": "",
+   "排版": "Yalalt",
+   "一审": "Samin, 柯炽炜",
+   "二审": "周宣彤，崔雨旸，高容驷",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "club_pipe",
+  "credits_extra_roles": {
+   "图文": "Yalalt"
+  },
+  "credit_separators": [
+   "ASCII_comma",
+   "space",
+   "，"
+  ],
+  "extraction_complete": true,
+  "opening_move": "Two-paragraph CN lede framing the series with a future external event ('近日，哈工大（深圳）国际青年俱乐部（HSIYC）正式推出“APEC智慧校园创新系列”——三场独立竞赛，灵感来自2026年11月深圳承办APEC峰会。'), then the same two paragraphs in EN; no dateline, no hero.",
+  "closing_move": "鸣谢 / 国际教育中心 / Acknowledgments / International Education Center, then 'Join our WeChat Group for Event Notices!' + email + the 本文最终解释权归 legal line (CN + EN), then a 3-line club block, credits, TOC.",
+  "notes": "Longest article (2261 body CJK chars vs corpus median 860). Contains a bilingual '内容规范 / Content Guidelines' compliance block repeated verbatim for competitions 2 and 3 (strict political-direction / anti-plagiarism boilerplate). EN typo 'JUDING CRITERIA' twice (should read JUDGING). EN typo 'all successfull participants'. Prize vocabulary (冠军 with no 第一名) does not match the recap #15 which uses both."
+ },
+ {
+  "file": "国际青年俱乐部___以乐会友_以言知音_三校中英文音乐交流之夜圆满举行.txt",
+  "slug": "12_国际青年俱乐部___以乐会友_以言知音_三校中英文音乐交流之夜圆满举行",
+  "type": "回顾",
+  "series": "国际青年俱乐部",
+  "headline_cn": "国际青年俱乐部 | 以乐会友，以言知音——三校中英文音乐交流之夜圆满举行",
+  "headline_en": "",
+  "has_byline": true,
+  "dateline": "",
+  "cn_char_count": 48,
+  "en_word_count": 9,
+  "cn_en_ratio": 5.333,
+  "source_cn_char_count": 99,
+  "source_en_word_count": 12,
+  "source_lines": 9,
+  "sections": [],
+  "section_count": 0,
+  "has_slide_right_hint": false,
+  "has_winners_list": false,
+  "has_special_thanks": false,
+  "has_toc_block": true,
+  "credits": {
+   "文字": "",
+   "图片": "",
+   "排版": "",
+   "一审": "",
+   "二审": "",
+   "三审": ""
+  },
+  "credits_schema": "not_extracted",
+  "credits_extra_roles": {},
+  "credit_separators": [],
+  "extraction_complete": false,
+  "opening_move": "UNKNOWN - body did not extract (see notes).",
+  "closing_move": "UNKNOWN - only the TOC block extracted.",
+  "notes": "TEXT EXTRACTION INCOMPLETE: 7 page images but only 9 text lines (title, WeChat stamp, TOC). The one article in the corpus with NO extractable credit block, so nothing can be said about its 一审/二审/三审 - any rule claiming 'all 17 articles carry the 三审 block' is false for this file."
+ },
+ {
+  "file": "国际青年俱乐部___国际学子鹏海模联2026斩获三项大奖.txt",
+  "slug": "13_国际青年俱乐部___国际学子鹏海模联2026斩获三项大奖",
+  "type": "回顾",
+  "series": "鹏海模联 PENGHAI MUN",
+  "headline_cn": "国际青年俱乐部 | 国际学子鹏海模联2026斩获三项大奖",
+  "headline_en": "PENGHAI MUN 2026 / 鹏海模联2026",
+  "has_byline": true,
+  "dateline": "2026年7月19日至21日",
+  "cn_char_count": 360,
+  "en_word_count": 196,
+  "cn_en_ratio": 1.837,
+  "source_cn_char_count": 498,
+  "source_en_word_count": 210,
+  "source_lines": 160,
+  "sections": [
+   {
+    "heading_cn": "01 亮相鹏海",
+    "heading_en": "Represent"
+   },
+   {
+    "heading_cn": "02 三日磋商",
+    "heading_en": "Deliberate"
+   },
+   {
+    "heading_cn": "03 载誉而归",
+    "heading_en": "Achieve"
+   },
+   {
+    "heading_cn": "会议详情",
+    "heading_en": "Event Highlights"
+   },
+   {
+    "heading_cn": "获奖代表",
+    "heading_en": "Award Winners"
+   },
+   {
+    "heading_cn": "最佳代表",
+    "heading_en": "Best Delegate"
+   },
+   {
+    "heading_cn": "杰出代表",
+    "heading_en": "Outstanding Delegate"
+   },
+   {
+    "heading_cn": "最具潜力奖",
+    "heading_en": "Best Potential"
+   },
+   {
+    "heading_cn": "组织代表",
+    "heading_en": "Organising Delegates"
+   },
+   {
+    "heading_cn": "主席团成员",
+    "heading_en": "Dais Member"
+   },
+   {
+    "heading_cn": "联合主席",
+    "heading_en": "Co-Chair"
+   },
+   {
+    "heading_cn": "秘书处成员",
+    "heading_en": "Secretariat Member"
+   },
+   {
+    "heading_cn": "结语",
+    "heading_en": "Closing"
+   }
+  ],
+  "section_count": 13,
+  "has_slide_right_hint": true,
+  "has_winners_list": true,
+  "has_special_thanks": false,
+  "has_toc_block": true,
+  "credits": {
+   "文字": "Zhumabay Aruzhan",
+   "图片": "Yalalt",
+   "排版": "Zhumabay Aruzhan",
+   "一审": "Samin、柯炽炜",
+   "二审": "周宣彤、崔雨旸、高容驷",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "club_pipe",
+  "credits_extra_roles": {},
+  "credit_separators": [
+   "space",
+   "、"
+  ],
+  "extraction_complete": true,
+  "opening_move": "Hero with a vertical 'H S I Y C' monogram + 'PENGHAI MUN 2026 / 鹏海模联2026', then a 3-item numbered mini-TOC ('01 亮相鹏海 | Represent', '02 三日磋商 | Deliberate', '03 载誉而归 | Achieve'), then '会议详情 / Event Highlights' + a dateline-led CN paragraph ('2026年7月19日至21日，第二届鹏海模拟联合国大会在深圳北理莫斯科大学（SMBU）成功举办。') + EN.",
+  "closing_move": "结语 / Closing + pull-quote line '以语言搭桥，以思辨连接世界 / Building Bridges Through Language' + thanks to delegates, then a 2-line club block, credits, TOC.",
+  "notes": "Award cards pair a CN+EN title above a 'Country representative / Delegate of X - Name' line. CN lists three topics ('1923鲁尔危机、明金辽东之战及COP30气候大会') while EN drops one ('topics ranging from the 1923 Ruhr Crisis to COP30'). EN grammar slip 'In partnerships with the Penghai MUN 2026'. Uses a CJK radical glyph '副秘书⻓' instead of 长. NO AcademiaSphere line in the closing block."
+ },
+ {
+  "file": "国际青年俱乐部___学业支持_学生心声_同伴之间.txt",
+  "slug": "14_国际青年俱乐部___学业支持_学生心声_同伴之间",
+  "type": "其他",
+  "series": "学域 AcademiaSphere",
+  "headline_cn": "国际青年俱乐部 | 学业支持：学生心声·同伴之间",
+  "headline_en": "Student Voices",
+  "has_byline": true,
+  "dateline": "",
+  "cn_char_count": 1346,
+  "en_word_count": 744,
+  "cn_en_ratio": 1.809,
+  "source_cn_char_count": 1464,
+  "source_en_word_count": 756,
+  "source_lines": 284,
+  "sections": [
+   {
+    "heading_cn": "课堂之内",
+    "heading_en": "Inside the Room"
+   },
+   {
+    "heading_cn": "顿悟时刻",
+    "heading_en": "The Moment It Clicked"
+   },
+   {
+    "heading_cn": "走进考场",
+    "heading_en": "Walking Into the Exam"
+   },
+   {
+    "heading_cn": "展望未来",
+    "heading_en": "Moving Forward"
+   }
+  ],
+  "section_count": 4,
+  "has_slide_right_hint": true,
+  "has_winners_list": false,
+  "has_special_thanks": false,
+  "has_toc_block": true,
+  "credits": {
+   "文字": "Yalalt",
+   "图片": "",
+   "排版": "Yalalt",
+   "一审": "Samin, 柯炽炜",
+   "二审": "周宣彤，崔雨旸，高容驷",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "club_pipe",
+  "credits_extra_roles": {},
+  "credit_separators": [
+   "ASCII_comma",
+   "space",
+   "，"
+  ],
+  "extraction_complete": true,
+  "opening_move": "Hero stack (club name, '学域 / AcademiaSphere', '学生心声 / 同伴之间 / Student Voices'), then a CN lede defining 学域 ('学域（AcademiaSphere）是哈尔滨工业大学（深圳）国际青年俱乐部（HSIYC）内设的学业支持部门…') + EN mirror, then a 'we step away from numbers and statistics' framing pair.",
+  "closing_move": "A student pull-quote CTA ('来一次试试吧。一起面对难题，总比一个人闷在房间里好。' — 印度尼西亚籍大二学生Kenneth), an image caption for the 2026年4月27日 辅导老师答谢会, '左右滑动查看更多', a letter-spaced 'H I T S Z I n t e r n a t i o n a l Yo u t h C l u b' block, then credits. NO club-name + AcademiaSphere closing block.",
+  "notes": "Quote-driven feature, not an event report: 8 block quotes, each CN quote + attribution ('—— 蒙古籍大二学生Purevdorj') then the EN quote + '— Purevdorj, Sophomore from Mongolia'. Credit label is TYPOGRAPHED '文子 | Yalalt' (should be 文字). Hero text layer duplicates several lines. Describes 学域 as an internal 部门 where #5 calls it a 发起的项目. The only article using '左右滑动查看更多' plus four dated image captions that name tutor and course."
+ },
+ {
+  "file": "国际青年俱乐部___活动回顾_APEC智慧校园创新系列.txt",
+  "slug": "15_国际青年俱乐部___活动回顾_APEC智慧校园创新系列",
+  "type": "回顾",
+  "series": "APEC智慧校园创新系列",
+  "headline_cn": "国际青年俱乐部 | 活动回顾：APEC智慧校园创新系列",
+  "headline_en": "",
+  "has_byline": true,
+  "dateline": "2026 年 11 月",
+  "cn_char_count": 860,
+  "en_word_count": 582,
+  "cn_en_ratio": 1.478,
+  "source_cn_char_count": 974,
+  "source_en_word_count": 607,
+  "source_lines": 213,
+  "sections": [
+   {
+    "heading_cn": "01 APEC | 未来技能挑战赛",
+    "heading_en": "01 Future Skills Challenge"
+   },
+   {
+    "heading_cn": "预赛",
+    "heading_en": "Preliminary Rounds"
+   },
+   {
+    "heading_cn": "决赛",
+    "heading_en": "Final Rounds"
+   },
+   {
+    "heading_cn": "特别感谢",
+    "heading_en": "Special Thanks"
+   },
+   {
+    "heading_cn": "02 APEC | 游戏化系统设计大赛",
+    "heading_en": "Gamification Competition"
+   },
+   {
+    "heading_cn": "路演与展示",
+    "heading_en": "Roadshow & Defense"
+   },
+   {
+    "heading_cn": "03 APEC | 校园想象画廊",
+    "heading_en": "Campus Imagination Gallery"
+   },
+   {
+    "heading_cn": "结语",
+    "heading_en": "Closing"
+   }
+  ],
+  "section_count": 8,
+  "has_slide_right_hint": true,
+  "has_winners_list": true,
+  "has_special_thanks": true,
+  "has_toc_block": true,
+  "credits": {
+   "文字": "Zhumabay Aruzhan, Yalalt",
+   "图片": "Najmia Popal, Ferraa Ahmed",
+   "排版": "Zhumabay Aruzhan, Yalalt",
+   "一审": "Samin、柯炽炜",
+   "二审": "周宣彤、崔雨旸、高容驷",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "club_pipe",
+  "credits_extra_roles": {},
+  "credit_separators": [
+   "ASCII_comma",
+   "space",
+   "、"
+  ],
+  "extraction_complete": true,
+  "opening_move": "CN lede opens with the future event rather than the recap ('2026 年 11 月，深圳将迎来 APEC 峰会，哈工大（深圳）国际青年俱乐部（HSIYC）以此为灵感，推出“APEC 智慧校园创新系列”——三场围绕亚太共同体核心理念的独立竞赛。'), second paragraph delivers the payoff ('如今三场赛事圆满落幕，让我们一同回顾这段旅程。'), then the EN pair.",
+  "closing_move": "Closing / 结语 recaps the three values ('三场赛事，三种精神：创新、合作、开放。') and thanks participants, the AcademiaSphere team and HSIYC, then a 'slide right for more pictures' hint, a 3-line club block (哈工大（深圳）国际青年俱乐部 / HITSZ International Youth Club / AcademiaSphere), credits, TOC, and the WeChat footer '修改于2026年7月21日'.",
+  "notes": "Highest micro-block density: 5 'slide right for more pictures' hints, 10 ranking lines, a Special Thanks section, per-competition numbered hero titles. Ranking vocabulary SWITCHES inside the one article: 冠军/亚军/季军/第四名 for competition 1 but 第一名/第二名/第三名 for competitions 2 and 3. The only CN name+Latin pair in the corpus: '季军：谢昊轩 Xie Haoxuan'."
+ },
+ {
+  "file": "国际青年俱乐部_国际交流协会_哈尔滨工业大学_深圳_第一届模拟联合国科普讲堂圆满落幕.txt",
+  "slug": "16_国际青年俱乐部_国际交流协会_哈尔滨工业大学_深圳_第一届模拟联合国科普讲堂圆满落幕",
+  "type": "回顾",
+  "series": "模联 MUN (joint with HSICA)",
+  "headline_cn": "国际青年俱乐部 × 国际交流协会｜哈尔滨工业大学（深圳）第一届模拟联合国科普讲堂圆满落幕",
+  "headline_en": "MUN BOOT CAMP",
+  "has_byline": true,
+  "dateline": "2026年7月17日",
+  "cn_char_count": 1166,
+  "en_word_count": 577,
+  "cn_en_ratio": 2.021,
+  "source_cn_char_count": 1294,
+  "source_en_word_count": 599,
+  "source_lines": 236,
+  "sections": [
+   {
+    "heading_cn": "1. 活动概览",
+    "heading_en": "Event Overview"
+   },
+   {
+    "heading_cn": "为什么举办科普讲堂？",
+    "heading_en": "Why This Boot Camp Matters?"
+   },
+   {
+    "heading_cn": "1. 为两场国际大会蓄力 ·",
+    "heading_en": "Preparing for Two Major Conferences"
+   },
+   {
+    "heading_cn": "关键节点 · Key Dates",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "2. 培育校园模联文化 ·",
+    "heading_en": "Nurturing a Campus MUN Culture"
+   },
+   {
+    "heading_cn": "2. 活动现场",
+    "heading_en": "On the Day"
+   },
+   {
+    "heading_cn": "环节一：专业培训讲座",
+    "heading_en": "SESSION 1: Specialized Training Lectures"
+   },
+   {
+    "heading_cn": "第一讲 ｜ Lecture 1",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "第二讲 ｜ Lecture 2",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "第三讲 ｜ Lecture 3",
+    "heading_en": ""
+   },
+   {
+    "heading_cn": "环节二：模联实战模拟训练",
+    "heading_en": "SESSION 2 : Hands-On MUN Simulation Training"
+   },
+   {
+    "heading_cn": "环节三：颁奖与总结",
+    "heading_en": "SESSION 3: Awards and Conclusion"
+   },
+   {
+    "heading_cn": "更多精彩，敬请期待",
+    "heading_en": "Looking Ahead: More to Come"
+   }
+  ],
+  "section_count": 13,
+  "has_slide_right_hint": true,
+  "has_winners_list": false,
+  "has_special_thanks": false,
+  "has_toc_block": true,
+  "credits": {
+   "文字": "Zhumabay Aruzhan",
+   "图片": "Aziz Fatima、Gohar Ahmed Nader、Galal Mohammed、凌平 等",
+   "排版": "Zhumabay Aruzhan",
+   "一审": "Samin、柯炽炜",
+   "二审": "周宣彤、崔雨旸、高容驷",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "club_pipe",
+  "credits_extra_roles": {},
+  "credit_separators": [
+   "space",
+   "、"
+  ],
+  "extraction_complete": true,
+  "opening_move": "Hero stack ('国际青年俱乐部 × 国际交流协会' / 'HSIYC × HSICA' / '哈尔滨工业大学（深圳）第一届' / 'MUN BOOT CAMP' / '模联科普讲堂'), then '1. 活动概览 / Event Overview' + a dateline-led CN lede ('…2026年7月17日，由…联合主办的…科普讲堂在深圳校区温暖开讲，吸引了超过40名充满热情的中外学子齐聚一堂。本次活动得到了团委、国际教育中心以及国际事务处的悉心指导与大力支持。') + EN lede.",
+  "closing_move": "'更多精彩，敬请期待 / Looking Ahead: More to Come' (MUN 入门手册 + SZIMUN invite), a mission statement pair ('国际青年俱乐部与国际交流协会，将始终与每一位热爱模联、心怀世界的同学同行。'), an 'END' badge, credits, TOC. NO club-name closing block and no AcademiaSphere line.",
+  "notes": "Nested numbering collides at the same level ('1.' / '2.' as H2 sections AND '1.' / '2.' inside them). '关键节点 · Key Dates' is a 3-row date table. Mixed CN/EN separators inside section titles: '环节一：' (full-width colon) vs '第一讲 ｜' (full-width bar) vs 'SESSION 2 : ' (space before ASCII colon). Collaboration glyph is '×' here but 'x' in #1/#11's 'AcademiaSphere x Nexus Hive'."
+ },
+ {
+  "file": "国际青年俱乐部_无界青春_社团游园会圆满收官.txt",
+  "slug": "17_国际青年俱乐部_无界青春_社团游园会圆满收官",
+  "type": "收官",
+  "series": "无界校园·青春共行 (游园会)",
+  "headline_cn": "国际青年俱乐部 ｜无界青春：社团游园会圆满收官",
+  "headline_en": "A Joyful Closing.",
+  "has_byline": false,
+  "dateline": "2026年4月26日",
+  "cn_char_count": 708,
+  "en_word_count": 396,
+  "cn_en_ratio": 1.788,
+  "source_cn_char_count": 826,
+  "source_en_word_count": 418,
+  "source_lines": 157,
+  "sections": [
+   {
+    "heading_cn": "展位互动",
+    "heading_en": "AT OUR BOOTH"
+   },
+   {
+    "heading_cn": "国际风采",
+    "heading_en": "WOLRD ON STAGE"
+   },
+   {
+    "heading_cn": "幸运抽奖",
+    "heading_en": "LUCKY DRAW"
+   },
+   {
+    "heading_cn": "文化交流",
+    "heading_en": "CULTURAL EXCHANGE"
+   }
+  ],
+  "section_count": 4,
+  "has_slide_right_hint": true,
+  "has_winners_list": false,
+  "has_special_thanks": false,
+  "has_toc_block": true,
+  "credits": {
+   "文字": "Samin, Yalalt",
+   "图片": "Adnan, Ferraa, Munkh-Orshikh, Kanan",
+   "排版": "Yalalt",
+   "一审": "Samin, 柯炽炜",
+   "二审": "周宣彤，崔雨旸",
+   "三审": "卢锦章"
+  },
+  "credits_schema": "club_pipe",
+  "credits_extra_roles": {
+   "视频": "Alen, Adnan, Elvira, Zakaria"
+  },
+  "credit_separators": [
+   "ASCII_comma",
+   "space",
+   "，"
+  ],
+  "extraction_complete": true,
+  "opening_move": "Club-name banner '[ 哈工大（深圳）国际青年俱乐部 ]', hero ('无界校园·青春共行 / 圆满收官 A Joyful Closing. / HITSZ International Youth Club'), then a dateline-led CN lede ('2026年4月26日，“无界校园·青春共行”深圳大学城社团游园会在欢声笑语中圆满落幕。国际青年俱乐部（HSIYC）很荣幸代表哈工大深圳校区的国际群体参与其中。') + EN lede.",
+  "closing_move": "Thanks to visitors, teachers and organizers + forward promise ('未来，国际青年俱乐部将继续带来更多丰富有趣的活动…'), then a 2-line club block, a 7-line credit block (the only one containing a 视频 role), TOC, and the WeChat footer '修改于2026年5月27日'.",
+  "notes": "All four section headings are CN+EN on one line with EN in ALL CAPS, and one contains a typo that was approved: '国际风采 WOLRD ON STAGE' (WORLD). WeChat stamp has no 'Original' prefix and ends with '标题已修改'. 二审 lists only two names here while 三审 is the standard 卢锦章."
+ }
+]

@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HSIYC Article Writer</title>
+<style>
+  :root {
+    --navy: #1B3870;          /* brand navy, measured from the approved articles */
+    --navy-soft: #20314B;
+    --ink: #4C4C4C;
+    --h1: #141414;
+    --grey: #7F7F7F;
+    --line: #E2E6EE;
+    --ok: #1a8f4c;
+    --bad: #c0392b;
+    --warn: #b7791f;
+    --chip: #F4F6FA;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #fff; color: var(--ink);
+    font-family: -apple-system, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+    font-size: 15px; line-height: 1.6;
+  }
+  header {
+    border-bottom: 1px solid var(--line); padding: 16px 28px;
+    display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;
+    position: sticky; top: 0; background: #fff; z-index: 10;
+  }
+  header h1 { font-size: 19px; color: var(--h1); margin: 0; font-weight: 700; }
+  header .sub { font-size: 12px; color: var(--grey); letter-spacing: .06em; }
+  header .spacer { flex: 1; }
+  .status { font-size: 12.5px; color: var(--grey); }
+  .status b { color: var(--navy); font-weight: 600; }
+
+  main { display: grid; grid-template-columns: minmax(420px, 560px) 1fr; gap: 0; align-items: start; }
+  @media (max-width: 1080px) { main { grid-template-columns: 1fr; } }
+  .pane { padding: 22px 28px 72px; }
+  .pane.left { border-right: 1px solid var(--line); }
+
+  fieldset { border: 0; margin: 0 0 26px; padding: 0; }
+  legend {
+    font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--navy); padding: 0 0 10px; border-bottom: 1px solid var(--line);
+    width: 100%; margin-bottom: 14px;
+  }
+  .field { margin-bottom: 16px; }
+  .field > label { display: block; font-size: 13.5px; font-weight: 600; color: var(--navy-soft); margin-bottom: 5px; }
+  .field .req { color: var(--bad); margin-left: 3px; }
+  .field .hint { display: block; font-weight: 400; color: var(--grey); font-size: 12px; margin-top: 4px; line-height: 1.5; }
+  input[type=text], input[type=date], input[type=time], textarea, select {
+    width: 100%; padding: 9px 11px; border: 1px solid var(--line); border-radius: 6px;
+    font-family: inherit; font-size: 14px; color: var(--ink); background: #fff;
+  }
+  textarea { min-height: 76px; resize: vertical; line-height: 1.6; }
+  input:focus, textarea:focus, select:focus { outline: 2px solid #c8d5e8; border-color: var(--navy); }
+  input.invalid, textarea.invalid { border-color: var(--bad); background: #fffafa; }
+  .row { display: flex; gap: 12px; }
+  .row > .field { flex: 1; margin-bottom: 16px; }
+
+  .drop {
+    border: 1px dashed #b9c4d6; border-radius: 8px; padding: 16px; text-align: center;
+    color: var(--grey); font-size: 13px; background: #fafbfd; cursor: pointer;
+  }
+  .drop.over { border-color: var(--navy); background: #f2f6fd; }
+  .thumbs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .thumb { position: relative; width: 72px; height: 72px; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .thumb button {
+    position: absolute; top: 2px; right: 2px; border: 0; border-radius: 50%; width: 20px; height: 20px;
+    background: rgba(0,0,0,.55); color: #fff; cursor: pointer; font-size: 12px; line-height: 1;
+  }
+
+  button.primary {
+    margin-top: 8px; width: 100%; padding: 13px; border: 0; border-radius: 6px;
+    background: var(--navy); color: #fff; font-size: 15px; font-weight: 600; cursor: pointer;
+  }
+  button.primary:disabled { background: #9aa8bf; cursor: default; }
+  button.ghost {
+    border: 1px solid var(--line); background: #fff; padding: 8px 14px; border-radius: 6px;
+    cursor: pointer; font-size: 13px; color: var(--ink);
+  }
+  .toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 18px; flex-wrap: wrap; }
+  .errors { background: #fdecea; border: 1px solid #f5c6c0; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; display: none; }
+  .errors.show { display: block; }
+  .errors h3 { margin: 0 0 6px; font-size: 13.5px; color: var(--bad); }
+  .errors li { font-size: 13px; margin-bottom: 3px; }
+  .warns { background: #fffbf0; border: 1px solid #f0dfb4; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; display: none; }
+  .warns.show { display: block; }
+  .warns h3 { margin: 0 0 6px; font-size: 13.5px; color: var(--warn); }
+  .warns li { font-size: 13px; margin-bottom: 3px; }
+  .log { margin-top: 14px; font-size: 12.5px; color: var(--grey); white-space: pre-wrap; font-family: ui-monospace, Consolas, monospace; }
+
+  .card { border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; margin-bottom: 18px; }
+  .card h2 { font-size: 15px; margin: 0 0 12px; color: var(--h1); }
+  .score { font-size: 34px; font-weight: 700; line-height: 1; }
+  .score.ok { color: var(--ok); } .score.bad { color: var(--bad); }
+  .score small { font-size: 14px; color: var(--grey); font-weight: 400; }
+  .finding { padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: 13.5px; }
+  .finding:last-child { border-bottom: 0; }
+  .tag { font-size: 11px; font-weight: 700; letter-spacing: .04em; padding: 1px 6px; border-radius: 3px; }
+  .tag.error { background: #fdecea; color: var(--bad); }
+  .tag.warning { background: #fdf6e3; color: var(--warn); }
+  .code { font-family: ui-monospace, Consolas, monospace; font-size: 11.5px; color: var(--grey); }
+  .hintline { color: var(--grey); font-size: 12.5px; margin-top: 3px; }
+  .files a { display: inline-block; margin: 4px 12px 4px 0; font-size: 13px; color: var(--navy); font-weight: 600; }
+  .stats { font-size: 12.5px; color: var(--grey); }
+  iframe.preview { width: 100%; height: 78vh; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .empty { color: var(--grey); font-size: 14px; }
+  .needs { background: #fffbf0; border: 1px solid #f0dfb4; border-radius: 8px; padding: 14px 18px; margin-bottom: 18px; }
+  .needs h2 { color: var(--warn); }
+  .needs li { margin-bottom: 5px; font-size: 13.5px; }
+  .tabs { display: flex; gap: 4px; margin-bottom: 14px; }
+  .tabs button {
+    border: 1px solid var(--line); background: #fff; padding: 7px 14px; border-radius: 6px;
+    cursor: pointer; font-size: 13px; color: var(--ink);
+  }
+  .tabs button.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+  .md { white-space: pre-wrap; font-size: 13.5px; line-height: 1.75; max-height: 78vh; overflow: auto;
+        font-family: inherit; border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+  .briefbox { white-space: pre-wrap; font-family: ui-monospace, Consolas, monospace; font-size: 12px;
+              background: var(--chip); border: 1px solid var(--line); border-radius: 8px; padding: 14px;
+              max-height: 50vh; overflow: auto; }
+
+  /* the event-description box: the one place the operator writes freely */
+  .field textarea.big { min-height: 190px; line-height: 1.65; }
+  .devbar { display: flex; align-items: center; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
+  .devbar button[disabled] { opacity: .55; cursor: default; }
+  .devnote { font-size: 12px; color: var(--grey); }
+  .devbox { margin-top: 10px; border: 1px solid var(--line); border-left: 3px solid var(--navy);
+            border-radius: 6px; padding: 10px 14px; background: #fafbfd; font-size: 13px; }
+  .devbox h4 { margin: 0 0 6px; font-size: 12.5px; color: var(--navy-soft); }
+  .devbox ul { margin: 0; padding-left: 18px; }
+  .devbox li { margin-bottom: 3px; }
+  .devbox.warn { border-left-color: var(--warn); background: #fffbf0; }
+  .devbox.bad { border-left-color: var(--bad); background: #fdecea; }
+  .devbox.ok { border-left-color: var(--ok); }
+
+  /* last-resort copy source: the article itself, on the page, already selected */
+  .pastebox { margin-top: 10px; max-height: 46vh; overflow: auto; border: 1px solid var(--navy);
+              border-radius: 6px; padding: 16px 18px; background: #fff; font-size: 14px;
+              line-height: 1.8; color: var(--ink); outline: none; }
+  .pastebox:focus { box-shadow: 0 0 0 3px #dbe4f2; }
+</style>
+</head>
+<body>
+<header>
+  <h1>HSIYC Article Writer</h1>
+  <span class="sub">HITSZ INTERNATIONAL YOUTH CLUB</span>
+  <span class="spacer"></span>
+  <span class="status" id="status">connecting…</span>
+  <a href="/gallery" style="margin-left:14px;font-size:12.5px">Gallery · 往期文章与视觉</a>
+</header>
+
+<main>
+  <section class="pane left">
+    <div class="toolbar">
+      <button class="ghost" id="loadDemo" type="button">Fill with an example</button>
+      <button class="ghost" id="clearAll" type="button">Clear form</button>
+    </div>
+
+    <div class="errors" id="errors"><h3>Please fix these</h3><ul id="errorList"></ul></div>
+    <div class="warns" id="warns"><h3>Worth checking</h3><ul id="warnList"></ul></div>
+
+    <form id="form" autocomplete="off"></form>
+
+    <fieldset>
+      <legend>Event photos</legend>
+      <div class="drop" id="drop">
+        Click to choose photos, or drag them here &middot; JPG / PNG / WebP
+        <input type="file" id="files" accept="image/*" multiple hidden>
+      </div>
+      <div class="thumbs" id="thumbs"></div>
+      <span class="hint">The agent looks at each photo to place and caption it. Optional, but the
+        approved articles almost always carry at least one.</span>
+    </fieldset>
+
+    <fieldset>
+      <legend>Event artwork</legend>
+      <label for="art">Illustration</label>
+      <select id="art"></select>
+      <span class="hint">Poster, banner and social card, drawn to match the event. Artwork is a
+        separate deliverable and is never placed in the article PDF — it is always labelled as an
+        illustration, never as an event photo.</span>
+      <label style="margin-top:10px"><input type="checkbox" id="deck" checked>
+        Also build the PowerPoint deck</label>
+    </fieldset>
+
+    <button class="primary" id="go" type="button">Generate article</button>
+    <div class="log" id="log"></div>
+  </section>
+
+  <section class="pane right" id="out">
+    <p class="empty">Answer the questions on the left, then press <b>Generate article</b>.<br>
+    The result, the pre-submission check and the output files will appear here.</p>
+    <div class="card">
+      <h2>What you will get</h2>
+      <ul style="font-size:13.5px;margin:0;padding-left:20px">
+        <li>A bilingual article — Chinese and English, laid out like the approved ones</li>
+        <li>A pre-submission check against the reasons articles get returned</li>
+        <li>A preview, a Word file, a PDF, a deck and paste-ready Markdown</li>
+        <li>A poster, banner and social card matched to the event</li>
+      </ul>
+      <p class="hintline" style="margin-top:12px">Nothing is invented. Every name, number and date
+        in the article comes from your answers — anything missing is listed for you instead.</p>
+    </div>
+  </section>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let SCHEMA = [];
+let selected = [];
+let WECHAT = { configured: false, appid: '' };
+
+/* ------------------------------------------------------------------ the form */
+async function loadForm() {
+  const r = await fetch('/api/form');
+  const data = await r.json();
+  SCHEMA = data.groups;
+  const artSelect = $('art');
+  if (artSelect && data.art_backends) {
+    artSelect.innerHTML = '';
+    for (const b of data.art_backends) {
+      const opt = document.createElement('option');
+      opt.value = b.value;
+      opt.textContent = b.label;
+      artSelect.appendChild(opt);
+    }
+    artSelect.value = 'auto';
+  }
+  const form = $('form');
+  form.innerHTML = '';
+  for (const g of SCHEMA) {
+    const fs = document.createElement('fieldset');
+    const lg = document.createElement('legend');
+    lg.textContent = g.group;
+    fs.appendChild(lg);
+    let row = null;
+    for (const f of g.fields) {
+      const wrap = document.createElement('div');
+      wrap.className = 'field';
+      const label = document.createElement('label');
+      label.htmlFor = 'f_' + f.key;
+      label.textContent = f.label;
+      if (f.required) {
+        const star = document.createElement('span');
+        star.className = 'req'; star.textContent = '*';
+        label.appendChild(star);
+      }
+      wrap.appendChild(label);
+
+      let input;
+      if (f.kind === 'select') {
+        input = document.createElement('select');
+        const choices = f.choices && f.choices.length
+          ? f.choices
+          : (f.options || []).map((o) => ({ value: o, label: o }));
+        for (const c of choices) {
+          const opt = document.createElement('option');
+          opt.value = c.value;      // the Chinese value the agent works with
+          opt.textContent = c.label; // the English label the operator reads
+          input.appendChild(opt);
+        }
+      } else if (f.kind === 'textarea') {
+        input = document.createElement('textarea');
+        if (f.rows) { input.rows = f.rows; input.classList.add('big'); }
+      } else {
+        input = document.createElement('input');
+        input.type = f.kind === 'date' ? 'date' : (f.kind === 'time' ? 'time' : 'text');
+      }
+      input.id = 'f_' + f.key;
+      input.name = f.key;
+      if (f.placeholder) input.placeholder = f.placeholder;
+      wrap.appendChild(input);
+
+      if (f.hint) {
+        const hint = document.createElement('span');
+        hint.className = 'hint'; hint.textContent = f.hint;
+        wrap.appendChild(hint);
+      }
+      if (f.key === 'event_description') wrap.appendChild(developTools(input));
+      // Date and time fields sit side by side.
+      if (f.kind === 'date' || f.kind === 'time') {
+        if (!row) { row = document.createElement('div'); row.className = 'row'; fs.appendChild(row); }
+        row.appendChild(wrap);
+        if (row.children.length === 2) row = null;
+      } else {
+        row = null;
+        fs.appendChild(wrap);
+      }
+    }
+    form.appendChild(fs);
+  }
+}
+
+function answers() {
+  const out = {};
+  for (const g of SCHEMA) {
+    for (const f of g.fields) {
+      const el = document.getElementById('f_' + f.key);
+      if (el) out[f.key] = el.value.trim();
+    }
+  }
+  return out;
+}
+
+/* ------------------------------------------------- develop the event description */
+/* The one open question gets a button: Agentica rewrites the operator's rough notes into
+   a description worth writing from, checks that it added no figure or name of its own,
+   and hands it back into the box - editable, with the original one click away. */
+function developTools(input) {
+  const bar = document.createElement('div');
+  bar.className = 'devbar';
+  const go = document.createElement('button');
+  go.type = 'button'; go.className = 'ghost'; go.textContent = 'Develop this description';
+  const undo = document.createElement('button');
+  undo.type = 'button'; undo.className = 'ghost'; undo.textContent = 'Undo'; undo.hidden = true;
+  const note = document.createElement('span');
+  note.className = 'devnote';
+  bar.append(go, undo, note);
+
+  const box = document.createElement('div');
+  box.className = 'devbox'; box.hidden = true;
+  const holder = document.createElement('div');
+  box.appendChild(holder);
+  const wrap = document.createDocumentFragment();
+  wrap.append(bar, box);
+
+  let previous = '';
+  const counter = () => {
+    const n = input.value.trim().length;
+    note.textContent = n
+      ? `${n} characters · Agentica develops this when you generate`
+      : 'Nothing written yet';
+  };
+  input.addEventListener('input', counter);
+  counter();
+
+  function say(kind, html) {
+    box.hidden = false;
+    box.className = 'devbox ' + (kind || '');
+    holder.innerHTML = html;
+  }
+
+  function report(j) {
+    const un = j.unsourced || {};
+    const nums = un.numbers || [];
+    const dates = un.dates || [];
+    const names = un.names || [];
+    let html = '';
+    let kind = 'ok';
+    if (nums.length || names.length || dates.length) {
+      kind = 'warn';
+      html += '<h4>This rewrite contains something your notes do not</h4><ul>'
+        + nums.map((n) => `<li>figure <b>${esc(n)}</b> — not in your notes</li>`).join('')
+        + dates.map((d) => `<li>date <b>${esc(d)}</b> — not in your notes</li>`).join('')
+        + names.map((n) => `<li>name <b>${esc(n)}</b> — not in your notes</li>`).join('')
+        + '</ul><p class="devnote" style="margin:6px 0 0">Remove it, or add the fact to your own notes. '
+        + 'The article check refuses an unsourced figure too, so it would be caught again there.</p>';
+    } else {
+      html += '<h4>Nothing was added that you did not write</h4>'
+        + '<p style="margin:0">Every figure, date and Latin name in this rewrite already appears in your notes. '
+        + 'Read it before generating: this check cannot judge a rephrased sentence, only figures, dates and names.</p>';
+    }
+    const questions = j.questions || [];
+    if (questions.length) {
+      html += '<h4 style="margin-top:10px">Agentica still needs to know</h4><ul>'
+        + questions.map((q) => `<li>${esc(q)}</li>`).join('') + '</ul>'
+        + '<p class="devnote" style="margin:6px 0 0">Answer these in the fields below or in the box above. '
+        + 'Anything you leave out is handed to the editor as a gap instead of being invented.</p>';
+    }
+    const dropped = j.dropped || [];
+    if (dropped.length) {
+      html += '<h4 style="margin-top:10px">It could not keep</h4><ul>'
+        + dropped.map((d) => `<li>${esc(d)}</li>`).join('') + '</ul>';
+    }
+    say(kind, html);
+  }
+
+  go.onclick = async () => {
+    const text = input.value.trim();
+    if (text.length < 12) {
+      say('warn', 'Write a sentence or two first — rough notes are exactly what this button wants.');
+      return;
+    }
+    go.disabled = true; go.textContent = 'Developing…';
+    say('', 'Agentica is rewriting your notes, keeping every fact and adding none.');
+    try {
+      const docType = (document.getElementById('f_doc_type') || {}).value || '';
+      const r = await fetch('/api/develop', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text, doc_type: docType }),
+      });
+      const j = await r.json();
+      if (!r.ok) throw new Error(j.error || ('HTTP ' + r.status));
+      // Keep the operator's own text as the undo target: developing twice must still be
+      // able to get back to what they wrote, not to the first rewrite.
+      if (undo.hidden) previous = input.value;
+      input.value = j.description;
+      undo.hidden = false;
+      counter();
+      report(j);
+    } catch (e) {
+      say('bad', 'Could not develop the description: ' + esc(e.message));
+    } finally {
+      go.disabled = false; go.textContent = 'Develop this description';
+    }
+  };
+
+  undo.onclick = () => {
+    input.value = previous;
+    previous = '';
+    undo.hidden = true;
+    counter();
+    say('', 'Your own text is back in the box; the developed version is discarded.');
+  };
+
+  return wrap;
+}
+
+/* ----------------------------------------------------------- example + clear */
+const DEMO = {
+  event_description: 'The first round of the APEC Smart Campus Innovation Series finally '
+    + 'happened in A509 on 8 November — we called it the Future Skills Challenge. 32 students '
+    + 'from 7 countries signed up, and we ran it as a 1v1 blitz: two people at the whiteboard, '
+    + 'five integrals, 90 seconds each. The room was packed, about 80 people stayed to the end. '
+    + 'Tugsuu took the final against Brandon by a single point. 凌怡老师 judged and stayed '
+    + 'afterwards to give feedback to the finalists.',
+  event_name_en: 'APEC Smart Campus Innovation Series — Future Skills Challenge',
+  event_name_cn: 'APEC 智慧校园创新系列 —— 未来技能挑战赛（首届积分蜜蜂赛）',
+  doc_type: '回顾', date_start: '2026-11-08', time_start: '14:00', time_end: '17:00',
+  venue_en: 'Room A509, HITSZ', venue_cn: '哈工大（深圳）A509 教室',
+  organisers: 'HITSZ International Youth Club (HSIYC)',
+  co_organisers: 'International Education Center\nAcademiaSphere',
+  participants: '32 contestants in the preliminary rounds, 4 finalists, about 80 audience members',
+  judges: '凌怡老师 (Professor Ling Yi) — judge of the finals and mentor during preparation',
+  winners: 'Champion — Tugsuu Rentsennatsag\nRunner-up — Brandon Mantovanni Yunata\nThird place — 谢昊轩 Xie Haoxuan\nFourth place — Emil Aliyev',
+  highlights: 'The 1v1 blitz format drew the biggest crowd of the series\nOne finalist solved a five-minute integral in under 90 seconds\nSeveral first-year students asked to join the next round',
+  results_summary: 'The first of three APEC competitions closed successfully.',
+  programme: 'APEC Smart Campus Innovation Series',
+  toc_previous: '国际青年俱乐部 | APEC智慧校园创新系列竞赛',
+  toc_next: '国际青年俱乐部 | 学业支持：学生心声·同伴之间',
+  credit_writer: 'Zhumabay Aruzhan, Yalalt', credit_photo: 'Najmia Popal, Ferraa Ahmed',
+  credit_layout: 'Zhumabay Aruzhan, Yalalt', credit_review1: 'Samin、柯炽炜',
+  credit_review2: '周宣彤、崔雨旸、高容驷', credit_review3: '卢锦章',
+};
+
+$('loadDemo').onclick = () => {
+  for (const [k, v] of Object.entries(DEMO)) {
+    const el = document.getElementById('f_' + k);
+    if (el) el.value = v;
+  }
+};
+$('clearAll').onclick = () => {
+  $('form').reset();
+  selected = []; renderThumbs();
+  hideMessages();
+};
+
+/* ------------------------------------------------------------------- photos */
+$('drop').addEventListener('click', () => $('files').click());
+$('files').addEventListener('change', (e) => addFiles([...e.target.files]));
+['dragenter', 'dragover'].forEach((ev) => $('drop').addEventListener(ev, (e) => {
+  e.preventDefault(); $('drop').classList.add('over');
+}));
+['dragleave', 'drop'].forEach((ev) => $('drop').addEventListener(ev, (e) => {
+  e.preventDefault(); $('drop').classList.remove('over');
+}));
+$('drop').addEventListener('drop', (e) => addFiles([...e.dataTransfer.files]));
+
+function addFiles(list) {
+  for (const f of list) {
+    if (!f.type.startsWith('image/')) continue;
+    if (selected.some((s) => s.name === f.name && s.size === f.size)) continue;
+    selected.push(f);
+  }
+  renderThumbs();
+}
+function renderThumbs() {
+  const box = $('thumbs');
+  box.innerHTML = '';
+  selected.forEach((f, i) => {
+    const d = document.createElement('div');
+    d.className = 'thumb';
+    d.innerHTML = `<img src="${URL.createObjectURL(f)}" alt=""><button title="Remove">×</button>`;
+    d.querySelector('button').onclick = () => { selected.splice(i, 1); renderThumbs(); };
+    box.appendChild(d);
+  });
+}
+
+/* ------------------------------------------------------------------ helpers */
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"]/g, (c) => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]
+  ));
+}
+function hideMessages() {
+  $('errors').classList.remove('show');
+  $('warns').classList.remove('show');
+}
+function showMessages(errors, warnings) {
+  hideMessages();
+  document.querySelectorAll('.invalid').forEach((el) => el.classList.remove('invalid'));
+  if (errors && errors.length) {
+    $('errorList').innerHTML = errors.map((e) => `<li>${esc(e)}</li>`).join('');
+    $('errors').classList.add('show');
+  }
+  if (warnings && warnings.length) {
+    $('warnList').innerHTML = warnings.map((w) => `<li>${esc(w)}</li>`).join('');
+    $('warns').classList.add('show');
+  }
+}
+
+/* -------------------------------------------------------------- render result */
+function renderResult(res, files) {
+  const chk = res.check || {};
+  const score = chk.score ?? 0;
+  let html = '';
+
+  html += `<div class="card">
+    <h2>Pre-submission check</h2>
+    <div class="score ${chk.ok ? 'ok' : 'bad'}">${score}<small> / 100</small></div>
+    <p style="margin:10px 0 4px">${chk.errors ?? 0} error(s) · ${chk.warnings ?? 0} warning(s) · ${chk.infos ?? 0} note(s)</p>
+    <p style="margin:0;font-size:13.5px">${chk.ok
+      ? 'Structurally ready to submit — but a human still reads it before 送审.'
+      : 'Fix the errors below before sending it to the youth committee.'}</p>
+    <p class="hintline" style="margin-top:6px">This is a readiness score, not a percentage of
+      accuracy: each error costs 14 points, each warning 4, each note 1. A clean article with
+      stylistic notes scores in the 80s and is still submittable; 100 means no rule complained,
+      not that every fact has been verified — the check only proves the article contains nothing
+      you did not supply.</p>
+    <div class="stats" style="margin-top:12px">${esc(Object.entries(chk.stats || {}).map(([k, v]) => `${k}: ${v}`).join(' · '))}</div>
+  </div>`;
+
+  const findings = (chk.findings || []).filter((f) => f.severity !== 'info');
+  if (findings.length) {
+    html += '<div class="card"><h2>Findings</h2>';
+    for (const f of findings) {
+      html += `<div class="finding"><span class="tag ${f.severity}">${f.severity === 'error' ? 'ERROR' : 'WARN'}</span>
+        <span class="code">${esc(f.code)}</span> — ${esc(f.message)}
+        ${f.location ? `<em style="color:#7F7F7F">(${esc(f.location)})</em>` : ''}
+        ${f.hint ? `<div class="hintline">→ ${esc(f.hint)}</div>` : ''}</div>`;
+    }
+    html += '</div>';
+  }
+
+  const needs = res.needs_editor || [];
+  if (needs.length) {
+    html += `<div class="needs"><h2>For the editor before 送审</h2><ul>${needs.map((n) => `<li>${esc(n)}</li>`).join('')}</ul></div>`;
+  }
+
+  const pr = res.photo_report && res.photo_report.photos;
+  if (pr && pr.length) {
+    html += '<div class="card"><h2>What the photos show</h2>'
+      + '<p class="hintline">Captions and photo placement are based on this reading.</p>';
+    for (const p of pr) {
+      html += `<div class="finding"><b>${esc(p.file)}</b> <span class="code">${esc(p.usable_as || '')}</span>
+        <div>${esc(p.scene || '')}</div>
+        ${p.people ? `<div class="hintline">people: ${esc(p.people)}</div>` : ''}
+        ${(p.visible_text || []).length ? `<div class="hintline">visible text: ${esc((p.visible_text || []).join(' · '))}</div>` : ''}</div>`;
+    }
+    html += '</div>';
+  }
+
+  const art = res.art;
+  if (art && art.error) {
+    html += `<div class="card" style="border-left:4px solid #c0392b">
+      <h2 style="color:#c0392b">Artwork was not generated</h2>
+      <p style="margin:0 0 6px">The article itself is unaffected — only the poster, banner and
+        social card are missing.</p>
+      <div class="hintline">${esc(art.error)}</div>
+      ${art.stale ? '<div class="hintline">Anything shown below is left over from an earlier run.</div>' : ''}
+    </div>`;
+  }
+  if (art && (art.assets || []).length) {
+    const shown = art.assets.filter((a) => a.kind !== 'divider');
+    const bands = art.assets.length - shown.length;
+    const vibe = art.vibe || {};
+    const backendLabel = String(art.backend || '').startsWith('remote')
+      ? 'AI illustration (在线生成)' : art.backend === 'mixed'
+      ? 'AI illustration + local artwork' : 'House vector art (本地绘制)';
+    html += `<div class="card"><h2>Event artwork · 活动视觉</h2>
+      <p class="hintline">${esc(vibe.label_cn || '')} · ${esc(vibe.label_en || '')} ·
+        motif <b>${esc(vibe.motif || '')}</b> · ${esc(backendLabel)}${bands ? ` · ${bands} section band(s)` : ''}</p>
+      <div class="files" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:10px">
+        ${shown.map((a) => `<figure style="margin:0">
+          <a href="${esc(a.url)}" target="_blank" rel="noopener"><img src="${esc(a.url)}" alt="${esc(a.caption_cn || '')}"
+            style="width:100%;border-radius:6px;border:1px solid #e3e8f0;display:block"></a>
+          <figcaption style="font-size:11.5px;color:#7F7F7F;margin-top:5px;line-height:1.5">
+            ${esc(a.caption_cn || '')}<br>${esc(a.caption_en || '')}<br>
+            ${esc(a.width)} × ${esc(a.height)} · ${esc(a.backend || 'local')}<br>
+            <a href="${esc(a.url)}" download="${esc(a.file)}">Download PNG</a></figcaption></figure>`).join('')}
+      </div>
+      ${(art.notes || []).length ? `<p class="hintline" style="margin-top:10px">${esc((art.notes || []).join(' · '))}</p>` : ''}
+      <p class="hintline" style="margin-top:6px">${esc(art.disclaimer_cn || '')} ${esc(art.disclaimer_en || '')}</p>
+    </div>`;
+  }
+
+  const t = (res.article && res.article.title) || {};
+  html += `<div class="card"><h2>Headline</h2>
+    <div style="font-size:17px;font-weight:700;color:var(--h1)">${esc(t.cn)}</div>
+    ${t.en ? `<div style="color:#7F7F7F;font-size:13px;margin-top:4px">${esc(t.en)}</div>` : ''}
+    <div class="stats" style="margin-top:8px">exemplars: ${esc((res.exemplars || []).join(', ') || '—')} ·
+      attempts ${res.attempts ?? 1} · ${res.usage?.total_tokens ?? 0} tokens · ${res.usage?.elapsed_s ?? '?'}s</div>
+  </div>`;
+
+  if (files && files.length) {
+    html += `<div class="card"><h2>Output files</h2><div class="files">
+      ${files.map((f) => `<a href="/file/${f}" target="_blank">${esc(f.split('/').pop())}</a>`).join('')}
+    </div><p class="hintline">The HTML preview opens in the browser, the DOCX goes to whoever does
+      layout, the PDF is what you forward for review, and the Markdown pastes into the WeChat editor.</p></div>`;
+  }
+
+  const xiumi = (files || []).find((f) => f.endsWith('.xiumi.html'));
+  const bundleDir = (files || []).length ? files[0].split('/').slice(0, -1).join('/') : '';
+  if (xiumi) {
+    const guide = (files || []).find((f) => f.endsWith('.xiumi.md'));
+    html += `<div class="card"><h2>秀米 / WeChat layout</h2>
+      <p style="margin:0 0 10px;font-size:13.5px">The article as markup that survives being pasted
+        into the 秀米 editor (and the WeChat article editor): headings, the bilingual rhythm, award
+        rows and the 三审 block arrive laid out. Only inline styles are used — no stylesheet, no
+        classes — so your 秀米 template can restyle it freely.</p>
+      <p style="margin:0 0 12px;font-size:13.5px">Photographs arrive as labelled
+        <b>【照片待插入】</b> boxes: no image can cross a clipboard into a web editor, and WeChat
+        re-hosts every image on its own CDN. Upload each file in 秀米 where its box sits, then
+        delete the box.</p>
+      <button class="ghost" id="copyXiumi" type="button">Copy for 秀米</button>
+      <a style="margin-left:10px;font-size:13px" href="/file/${esc(xiumi)}" target="_blank"
+         rel="noopener">Open the paste file</a>
+      ${guide ? `<a style="margin-left:12px;font-size:13px" href="/file/${esc(guide)}" target="_blank"
+         rel="noopener">Paste guide (markdown)</a>` : ''}
+      <div class="devnote" id="copyState" style="margin-top:8px"></div>
+    </div>`;
+  }
+
+  /* The direct route: the same official API 秀米's 一键同步 uses. Shown always, because the
+     setup is the hard part - with no credentials it explains what to do and can test it. */
+  if (bundleDir) {
+    html += `<div class="card"><h2>公众号 draft · 微信草稿</h2>`;
+    if (WECHAT.configured) {
+      html += `<p style="margin:0 0 10px;font-size:13.5px">Uploads the photos and the poster cover
+        to WeChat (${esc(WECHAT.appid)}…), then creates a <b>draft</b> in the club's 草稿箱 with the
+        article body — no 秀米 step, no manual image upload. Nothing is published: a draft waits
+        for a human to press 群发 or 发布.</p>
+      <button class="ghost" id="wxDraft" type="button">Create the draft (dry run)</button>
+      <button class="ghost" id="wxSend" type="button" style="margin-left:8px">Upload and create it</button>
+      <button class="ghost" id="wxTest" type="button" style="margin-left:8px">Test the connection</button>`;
+    } else {
+      html += `<p style="margin:0 0 8px;font-size:13.5px">Not set up yet. Once the club's 公众号
+        credentials are on this machine, this button uploads the photos to WeChat and creates a
+        <b>draft</b> in the 草稿箱 — no manual layout, nothing published.</p>
+        <ol style="margin:0 0 10px;padding-left:22px;font-size:13.5px">
+          <li>公众号后台 → 设置与开发 → 基本配置: copy the AppID and AppSecret into
+            <code>hsiyc_writer/.wechat_appid</code> and <code>.wechat_secret</code>
+            (or set <code>HSIYC_WECHAT_APPID</code> / <code>HSIYC_WECHAT_SECRET</code>)</li>
+          <li>On the same page, add this machine's public IP to the <b>IP 白名单</b></li>
+          <li>The account needs the 草稿箱 / 素材 interface permission — a 未认证 account
+            cannot call it</li>
+        </ol>
+        <button class="ghost" id="wxTest" type="button">Test the connection</button>`;
+    }
+    html += `<div class="devnote" id="wxState" style="margin-top:8px"></div></div>`;
+  }
+  const preview = (files || []).find((f) => f.endsWith('.preview.html'));  const dir = (files || []).length ? files[0].split('/').slice(0, -1).join('/') : '';
+  html += `<div class="card"><h2>Preview</h2>
+    <div class="tabs">
+      <button class="active" data-t="html">Rendered article</button>
+      <button data-t="md">Markdown (paste into WeChat)</button>
+      <button data-t="brief">The brief the agent used</button>
+    </div>
+    <div id="pane-html">${preview ? `<iframe class="preview" src="/file/${preview}"></iframe>` : '<p class="empty">No preview file.</p>'}</div>
+    <pre class="md" id="pane-md" style="display:none"></pre>
+    <div class="briefbox" id="pane-brief" style="display:none"></div>
+  </div>`;
+
+  $('out').innerHTML = html;
+
+  /* "Copy for 秀米". Three routes, tried in this order, because the modern Clipboard API
+     is not always allowed:
+       1. execCommand('copy') on a hidden selection - synchronous, needs only the click,
+          and is not gated by the clipboard-write permission. This is the one that works
+          in an iframe or a webview, where the async API is refused outright.
+       2. navigator.clipboard.write() - called WITHOUT awaiting anything first. A write
+          that arrives after an await loses the user gesture (WebKit bug 222262).
+       3. Open the paste file and select-all - always works, needs no clipboard at all. */
+  const copyBtn = $('copyXiumi');
+  if (copyBtn && xiumi) {
+    copyBtn.onclick = () => {
+      const state = $('copyState');
+      const fragment = res.xiumi_html || '';
+      if (!fragment) {
+        state.textContent = 'This result predates the copy button. Use “Open the paste file”: '
+          + 'press Ctrl+A there, then Ctrl+C, and paste into 秀米.';
+        return;
+      }
+      if (copyViaSelection(fragment)) {
+        state.textContent = 'Copied. Paste into 秀米 with Ctrl+V, then upload the photos.';
+        return;
+      }
+      if (navigator.clipboard && window.ClipboardItem) {
+        const plain = fragment.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '');
+        navigator.clipboard.write([new ClipboardItem({
+          'text/html': new Blob([fragment], { type: 'text/html' }),
+          'text/plain': new Blob([plain], { type: 'text/plain' }),
+        })]).then(
+          () => { state.textContent = 'Copied. Paste into 秀米 with Ctrl+V, then upload the photos.'; },
+          () => { manualCopy(); },
+        );
+        return;
+      }
+      manualCopy();
+
+      function manualCopy() {
+        // Last resort that needs no permission and no new tab: show the article on the page,
+        // already selected, so Ctrl+C is the only key left to press. A webview that refuses
+        // both clipboard routes can still do this.
+        let box = $('xiumiManual');
+        if (!box) {
+          box = document.createElement('div');
+          box.id = 'xiumiManual';
+          box.className = 'pastebox';
+          box.setAttribute('contenteditable', 'true');
+          box.spellcheck = false;
+          copyBtn.parentNode.insertBefore(box, state);
+        }
+        box.innerHTML = fragment;
+        state.textContent = 'Your browser refused clipboard access. The article is in the box below, '
+          + 'already selected — press Ctrl+C, then paste into 秀米 with Ctrl+V.';
+        box.focus();
+        const range = document.createRange();
+        range.selectNodeContents(box);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+    };
+  }
+
+  /* 公众号 draft: dry run first, then the real call behind an explicit confirmation. */
+  const wxState = $('wxState');
+  const callDraft = async (send) => {
+    if (!wxState) return;
+    wxState.textContent = send
+      ? 'Uploading the photos and creating the draft…'
+      : 'Checking what would be sent…';
+    try {
+      const r = await fetch('/api/wechat-draft', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ dir: bundleDir, send: !!send }),
+      });
+      const j = await r.json();
+      if (!r.ok) throw new Error(j.error || ('HTTP ' + r.status));
+      wxState.innerHTML = (j.progress || []).map((p) => esc(p)).join('<br>')
+        + '<br>' + (j.sent
+          ? `<b>Draft created</b> — open 公众号后台 → 草稿箱 (media_id ${esc(j.draft_media_id)})`
+          : 'Dry run: nothing was sent. Press “Upload and create it” to do it for real.');
+    } catch (e) {
+      wxState.textContent = 'Failed: ' + e.message;
+    }
+  };
+  if ($('wxDraft')) $('wxDraft').onclick = () => callDraft(false);
+  if ($('wxSend')) $('wxSend').onclick = () => {
+    if (!window.confirm('Upload the photos to WeChat and create a draft in the club 草稿箱?\n\n'
+        + 'Nothing is published — a draft waits for a human — but it does appear in the account.')) return;
+    callDraft(true);
+  };
+  if ($('wxTest')) $('wxTest').onclick = async () => {
+    wxState.textContent = 'Asking WeChat for a token…';
+    try {
+      const r = await fetch('/api/wechat-check', { method: 'POST' });
+      const j = await r.json();
+      if (j.ok) {
+        wxState.innerHTML = `OK — the credentials work and this machine (${esc(j.public_ip || '?')}) is whitelisted.<br>`
+          + 'Reload the page to get the draft buttons.';
+      } else {
+        wxState.innerHTML = esc(j.error || 'failed')
+          + (j.public_ip ? `<br>This machine's public IP: <b>${esc(j.public_ip)}</b>` : '');
+      }
+    } catch (e) {
+      wxState.textContent = 'Failed: ' + e.message;
+    }
+  };
+
+  const panes = { html: $('pane-html'), md: $('pane-md'), brief: $('pane-brief') };
+
+  $('out').querySelectorAll('.tabs button').forEach((b) => {
+    b.onclick = async () => {
+      $('out').querySelectorAll('.tabs button').forEach((x) => x.classList.toggle('active', x === b));
+      for (const [k, el] of Object.entries(panes)) el.style.display = (k === b.dataset.t) ? '' : 'none';
+      const which = b.dataset.t;
+      if (which === 'md' && !panes.md.dataset.loaded) {
+        const md = (files || []).find((f) => f.endsWith('.md'));
+        if (md) { panes.md.textContent = await (await fetch('/file/' + md)).text(); panes.md.dataset.loaded = '1'; }
+      }
+      if (which === 'brief' && !panes.brief.dataset.loaded) {
+        panes.brief.textContent = (res.brief_text || '').trim() || '(the brief was not recorded)';
+        panes.brief.dataset.loaded = '1';
+      }
+    };
+  });
+}
+
+/* -------------------------------------------------------------- copy for 秀米 */
+/* Copy rich HTML using a throwaway selection. Synchronous, so the click's user gesture is
+   still live when the copy happens, and not gated by the clipboard-write permission - the
+   async Clipboard API is what browsers refuse inside iframes and webviews. The element has
+   to be in the document and selectable, so it is parked off-screen rather than hidden. */
+function copyViaSelection(html) {
+  const holder = document.createElement('div');
+  holder.setAttribute('contenteditable', 'true');
+  holder.style.cssText = 'position:fixed;top:0;left:-10000px;width:1px;height:1px;overflow:hidden;';
+  holder.innerHTML = html;
+  document.body.appendChild(holder);
+  const selection = window.getSelection();
+  const previous = selection && selection.rangeCount ? selection.getRangeAt(0) : null;
+  const range = document.createRange();
+  range.selectNodeContents(holder);
+  let copied = false;
+  try {
+    selection.removeAllRanges();
+    selection.addRange(range);
+    copied = document.execCommand('copy');
+  } catch (e) {
+    copied = false;
+  }
+  selection.removeAllRanges();
+  if (previous) selection.addRange(previous);
+  holder.remove();
+  return copied;
+}
+
+/* -------------------------------------------------------------- generate flow */
+$('go').onclick = async () => {
+  const btn = $('go');
+  const a = answers();
+  hideMessages();
+
+  // Ask the server to validate the answers before spending any tokens.
+  const check = await (await fetch('/api/form/validate', {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ answers: a }),
+  })).json();
+  showMessages(check.errors, check.warnings);
+  if (!check.ok) {
+    // Mark the offending inputs so the operator can see what to fill in.
+    for (const f of (check.required_keys || [])) {
+      const el = document.getElementById('f_' + f);
+      if (el) el.classList.add('invalid');
+    }
+    return;
+  }
+
+  btn.disabled = true; btn.textContent = 'Generating…';
+  $('log').textContent = '';
+  $('out').innerHTML = '<p class="empty">Generating — usually 30–90 seconds.</p>';
+
+  const fd = new FormData();
+  fd.append('answers', JSON.stringify(a));
+  fd.append('repair_rounds', '1');
+  fd.append('art', ($('art') || {}).value || 'auto');
+  fd.append('deck', ($('deck') || {}).checked ? '1' : '0');
+  selected.forEach((f) => fd.append('photos', f, f.name));
+
+  try {
+    const r = await fetch('/api/generate-form', { method: 'POST', body: fd });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || ('HTTP ' + r.status));
+    const id = j.job_id;
+    let dots = 0;
+    while (true) {
+      await new Promise((res) => setTimeout(res, 1200));
+      const s = await (await fetch('/api/job/' + id)).json();
+      $('log').textContent = (s.progress || []).join('\n');
+      if (s.status === 'done') {
+        const files = await listFiles(s.output_dir);
+        renderResult(s.result, files);
+        break;
+      }
+      if (s.status === 'error') throw new Error(s.error);
+      dots = (dots + 1) % 3;
+      btn.textContent = 'Generating' + '.'.repeat(dots + 1);
+    }
+  } catch (e) {
+    $('out').innerHTML = `<div class="card"><h2 style="color:#c0392b">Generation failed</h2>
+      <p style="font-size:13.5px">${esc(e.message)}</p>
+      <p class="hintline">Check the API key and the network, then try again.</p></div>`;
+  } finally {
+    btn.disabled = false; btn.textContent = 'Generate article';
+  }
+};
+
+async function listFiles(dir) {
+  if (!dir) return [];
+  const r = await fetch('/api/files?dir=' + encodeURIComponent(dir));
+  if (!r.ok) return [];
+  return (await r.json()).files || [];
+}
+
+async function refreshStatus() {
+  try {
+    const s = await (await fetch('/api/status')).json();
+    WECHAT = { configured: !!s.wechat_configured, appid: s.wechat_appid || '' };
+    $('status').innerHTML = s.key_present
+      ? `key <b>${s.key_masked}</b> · <b>${s.corpus_size}</b> approved articles · <b>${s.text_model}</b>`
+        + (s.vision_enabled ? ` + photos <b>${s.vision_model}</b>` : '')
+      : '<span style="color:#c0392b">No API key — set DEEPSEEK_API_KEY</span>';
+  } catch (e) {
+    $('status').textContent = 'server unreachable';
+  }
+}
+
+(async () => { await loadForm(); refreshStatus(); })();
+</script>
+</body>
+</html>

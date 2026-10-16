@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "slug": "apec-smart-campus-innovation-series-future-skills-challenge-recap",
+    "doc_type": "回顾",
+    "event_date": "2026年11月8日（周六）14:00-17:00",
+    "event_end_date": "",
+    "venue": "哈工大（深圳）A509 教室",
+    "organisers": [
+      "哈工大（深圳）国际青年俱乐部（HSIYC）"
+    ],
+    "partners": [
+      "国际教育中心",
+      "AcademiaSphere"
+    ],
+    "generated_at": "2026-11-09T10:00:00+08:00",
+    "model": "hsiyc-writer",
+    "exemplars": [
+      "国际青年俱乐部___活动回顾_APEC智慧校园创新系列",
+      "国际青年俱乐部___APEC智慧校园创新系列竞赛"
+    ]
+  },
+  "title": {
+    "cn": "国际青年俱乐部 | 活动回顾：APEC 智慧校园创新系列 —— 未来技能挑战赛（首届积分蜜蜂赛）",
+    "en": "HSIYC | Event Recap: APEC Smart Campus Innovation Series — Future Skills Challenge (Integration Bee)",
+    "subtitle_cn": "以「创新」为主题，32 名选手同台竞技，首届积分蜜蜂赛圆满落幕",
+    "subtitle_en": "Themed \"Innovation\", 32 contestants competed, and the inaugural Integration Bee came to a successful close",
+    "kicker_en": "APEC | FUTURE SKILLS CHALLENGE"
+  },
+  "lead": {
+    "cn": "2026 年 11 月，深圳将迎来 APEC 峰会。以此为灵感，哈工大（深圳）国际青年俱乐部（HSIYC）推出「APEC 智慧校园创新系列」，三场独立竞赛分别对应亚太共同体的核心理念。作为系列赛的首场赛事，未来技能挑战赛——首届积分蜜蜂赛以「创新」为主题，于 2026 年 11 月 8 日（周六）14:00-17:00 在哈工大（深圳）A509 教室举行。32 名参赛者参加预赛，4 位选手挺进决赛，赛事现已圆满落幕，让我们一同回顾这段旅程。",
+    "en": "Shenzhen will host the APEC Summit in November 2026. Inspired by this milestone, the HITSZ International Youth Club (HSIYC) launched the APEC Smart Campus Innovation Series, three independent competitions each anchored to a core value of the Asia-Pacific community. As the first event of the series, the Future Skills Challenge — the inaugural Integration Bee — was themed \"Innovation\" and took place on 8 November 2026 (Saturday), 14:00-17:00, in Room A509 at HITSZ. 32 contestants entered the preliminary rounds and 4 finalists advanced to the final. The event has now come to a successful close, and we look back on the journey together."
+  },
+  "sections": [
+    {
+      "number": "01",
+      "heading_cn": "活动概览",
+      "heading_en": "Event Overview",
+      "body": [
+        {
+          "kind": "bilingual",
+          "cn": "本场赛事是「APEC 智慧校园创新系列」的首场竞赛，以「创新」为主题。随着 APEC 各经济体竞相迈入 AI 驱动的新阶段，快速而准确地解决复杂问题的能力变得前所未有的重要，而积分正是机器学习、数据科学以及整个亚太地区前沿研究的根基。",
+          "en": "This was the first competition of the APEC Smart Campus Innovation Series, themed \"Innovation\". As APEC economies race toward an AI-driven future, the ability to solve complex problems quickly and accurately has never been more essential — and integration is the foundation of machine learning, data science, and cutting-edge research across the Asia-Pacific."
+        },
+        {
+          "kind": "bilingual",
+          "cn": "赛事在哈工大（深圳）A509 教室举行，由哈工大（深圳）国际青年俱乐部（HSIYC）主办，国际教育中心与 AcademiaSphere 合办。比赛分为预赛与决赛两个阶段，全程在严格的时间限制下进行。",
+          "en": "The competition was held in Room A509 at HITSZ, organised by the HITSZ International Youth Club (HSIYC), with the International Education Centre and AcademiaSphere as co-organisers. It ran in two stages, the preliminary rounds and the final, both under strict time limits."
+        }
+      ],
+      "photo_placeholder": true
+    },
+    {
+      "number": "02",
+      "heading_cn": "预赛：1v1 快节奏对抗",
+      "heading_en": "Preliminary Rounds: Blitz 1v1 Battles",
+      "body": [
+        {
+          "kind": "bilingual",
+          "cn": "预赛采用快节奏的 1v1 赛制，两位选手同台对垒，实时解题。预赛阶段共有 32 名参赛者激烈角逐，争夺决赛席位。经过一轮轮残酷的淘汰，最终仅有 4 位精英选手脱颖而出，挺进决赛。",
+          "en": "The preliminary rounds followed a blitz 1v1 format, where two contestants went head-to-head solving integrals in real time. 32 competitors battled fiercely for a place in the final. After a gruelling series of eliminations, only 4 elite finalists remained standing."
+        },
+        {
+          "kind": "photo_grid",
+          "photos": [
+            {
+              "file": "preliminary-1v1.jpg",
+              "caption_cn": "预赛 1v1 对垒现场",
+              "caption_en": "Contestants going head-to-head in the preliminary rounds",
+              "alt": "Two contestants solving integrals side by side during the preliminary rounds"
+            }
+          ],
+          "layout": "1x1",
+          "cn": "左右滑动查看更多现场照片",
+          "en": "Swipe through more photos from the preliminary rounds"
+        }
+      ],
+      "photo_placeholder": true
+    },
+    {
+      "number": "03",
+      "heading_cn": "决赛：5 道高难度积分题",
+      "heading_en": "Final: 5 Challenging Integrals",
+      "body": [
+        {
+          "kind": "bilingual",
+          "cn": "决赛阶段，4 位晋级选手同台竞技，挑战 5 道高难度积分题，每题限时 5 分钟。这不仅是对微积分功底的检验，更是对临场心理素质的真正考验。",
+          "en": "In the final, the 4 finalists competed on stage, tackling 5 challenging integrals with a 5-minute limit for each problem. It was a true test of calculus proficiency and of composure under pressure."
+        },
+        {
+          "kind": "photo_grid",
+          "photos": [
+            {
+              "file": "final-round.jpg",
+              "caption_cn": "决赛答题现场",
+              "caption_en": "Finalists working on the integrals",
+              "alt": "Finalists solving integrals on stage during the final round"
+            }
+          ],
+          "layout": "1x1",
+          "cn": "左右滑动查看更多决赛瞬间",
+          "en": "Swipe through more moments from the final round"
+        }
+      ],
+      "photo_placeholder": true
+    },
+    {
+      "number": "04",
+      "heading_cn": "获奖名单",
+      "heading_en": "Award Winners",
+      "body": [
+        {
+          "kind": "bilingual",
+          "cn": "经过激烈比拼，首届积分蜜蜂赛最终名次如下：",
+          "en": "After an intense battle, the final standings of the inaugural Integration Bee are as follows:"
+        },
+        {
+          "kind": "list",
+          "items": [
+            {
+              "label_cn": "冠军",
+              "label_en": "Champion",
+              "value_cn": "Tugsuu Rentsennatsag",
+              "value_en": "Tugsuu Rentsennatsag"
+            },
+            {
+              "label_cn": "亚军",
+              "label_en": "First Runner-up",
+              "value_cn": "Brandon Mantovanni Yunata",
+              "value_en": "Brandon Mantovanni Yunata"
+            },
+            {
+              "label_cn": "季军",
+              "label_en": "Second Runner-up",
+              "value_cn": "谢昊轩 Xie Haoxuan",
+              "value_en": "谢昊轩 Xie Haoxuan"
+            },
+            {
+              "label_cn": "第四名",
+              "label_en": "Fourth Place",
+              "value_cn": "Emil Aliyev",
+              "value_en": "Emil Aliyev"
+            }
+          ]
+        },
+        {
+          "kind": "photo_grid",
+          "photos": [
+            {
+              "file": "award-ceremony.jpg",
+              "caption_cn": "颁奖合影",
+              "caption_en": "Group photo at the award ceremony",
+              "alt": "Winners and organisers posing together at the award ceremony"
+            }
+          ],
+          "layout": "1x1",
+          "cn": "左右滑动查看更多颁奖照片",
+          "en": "Swipe through more photos from the award ceremony"
+        }
+      ],
+      "photo_placeholder": true
+    },
+    {
+      "number": "05",
+      "heading_cn": "特别感谢",
+      "heading_en": "Special Thanks",
+      "body": [
+        {
+          "kind": "bilingual",
+          "cn": "衷心感谢凌怡老师在决赛中担任裁判，并在筹备期间给予我们宝贵的指导和建议。也感谢每一位参赛者的投入与热情，以及国际教育中心与 AcademiaSphere 对本次赛事的大力支持。",
+          "en": "We would like to express our sincere gratitude to Professor Ling for judging the final and for the invaluable guidance and advice offered during the preparation. Our thanks also go to every participant for their dedication and energy, and to the International Education Centre and AcademiaSphere for their strong support of this competition."
+        }
+      ],
+      "photo_placeholder": false
+    }
+  ],
+  "closing": {
+    "heading_cn": "结语",
+    "heading_en": "Closing",
+    "tagline_cn": "创新、合作、开放，让校园成为 APEC 愿景的实践缩影。",
+    "tagline_en": "Innovation, Cooperation, Openness — turning our campus into a living example of the APEC vision.",
+    "cn": "首届积分蜜蜂赛已圆满落幕，但「APEC 智慧校园创新系列」的旅程仍在继续。感谢每一位参赛者、评委与工作人员的付出，也感谢国际教育中心与 AcademiaSphere 的一路同行。让我们共同期待系列赛的下一场赛事，继续把亚太共同体的理念写进校园的日常。",
+    "en": "The inaugural Integration Bee has come to a successful close, but the journey of the APEC Smart Campus Innovation Series continues. Thank you to every participant, judge and organiser, and to the International Education Centre and AcademiaSphere for walking this path with us. Let us look forward to the next competition in the series, and keep writing the values of the Asia-Pacific community into everyday campus life."
+  },
+  "signoff": {
+    "cn": "哈工大（深圳）国际青年俱乐部",
+    "en": "HITSZ International Youth Club",
+    "program": "AcademiaSphere"
+  },
+  "credits": {
+    "文字": "Zhumabay Aruzhan, Yalalt",
+    "图片": "Najmia Popal, Ferraa Ahmed",
+    "排版": "Zhumabay Aruzhan, Yalalt",
+    "一审": "Samin、柯炽炜",
+    "二审": "周宣彤、崔雨旸、高容驷",
+    "三审": "卢锦章"
+  },
+  "toc": {
+    "previous": "国际青年俱乐部 | APEC智慧校园创新系列竞赛",
+    "next": "国际青年俱乐部 | 学业支持：学生心声·同伴之间"
+  },
+  "facts": [
+    {
+      "fact": "活动名称：APEC 智慧校园创新系列 —— 未来技能挑战赛（首届积分蜜蜂赛）",
+      "source": "STRUCTURED BRIEF / RAW NOTES 活动名称"
+    },
+    {
+      "fact": "文章类型：活动回顾",
+      "source": "STRUCTURED BRIEF doc_type"
+    },
+    {
+      "fact": "活动日期与时间：2026年11月8日（周六）14:00-17:00",
+      "source": "STRUCTURED BRIEF event_date / RAW NOTES 活动日期"
+    },
+    {
+      "fact": "活动地点：哈工大（深圳）A509 教室",
+      "source": "STRUCTURED BRIEF venue / RAW NOTES 活动地点"
+    },
+    {
+      "fact": "预赛 32 名参赛者，4 位选手进入决赛",
+      "source": "STRUCTURED BRIEF participants_count / RAW NOTES 参与人数"
+    },
+    {
+      "fact": "赛制：预赛为 1v1 快节奏对抗；决赛 5 道高难度积分题，每题限时 5 分钟",
+      "source": "STRUCTURED BRIEF highlights / RAW NOTES 赛制"
+    },
+    {
+      "fact": "冠军：Tugsuu Rentsennatsag",
+      "source": "STRUCTURED BRIEF winners / RAW NOTES 获奖名单"
+    },
+    {
+      "fact": "亚军：Brandon Mantovanni Yunata",
+      "source": "STRUCTURED BRIEF winners / RAW NOTES 获奖名单"
+    },
+    {
+      "fact": "季军：谢昊轩 Xie Haoxuan",
+      "source": "STRUCTURED BRIEF winners / RAW NOTES 获奖名单"
+    },
+    {
+      "fact": "第四名：Emil Aliyev",
+      "source": "STRUCTURED BRIEF winners / RAW NOTES 获奖名单"
+    },
+    {
+      "fact": "评委：凌怡老师（决赛裁判，并在筹备期间给予指导）",
+      "source": "STRUCTURED BRIEF judges / RAW NOTES 评委"
+    },
+    {
+      "fact": "主办：哈工大（深圳）国际青年俱乐部（HSIYC）",
+      "source": "STRUCTURED BRIEF organisers / RAW NOTES 主办"
+    },
+    {
+      "fact": "合办：国际教育中心、AcademiaSphere",
+      "source": "STRUCTURED BRIEF partners / RAW NOTES 合办"
+    },
+    {
+      "fact": "活动背景：2026 年 11 月深圳将举办 APEC 峰会，本系列赛以 APEC 核心理念之一「创新」为主题",
+      "source": "STRUCTURED BRIEF highlights / RAW NOTES 活动背景"
+    },
+    {
+      "fact": "现场照片含预赛 1v1 对垒、决赛答题、颁奖合影",
+      "source": "STRUCTURED BRIEF photo_notes / RAW NOTES 图片"
+    },
+    {
+      "fact": "署名：文字 Zhumabay Aruzhan, Yalalt；图片 Najmia Popal, Ferraa Ahmed；排版 Zhumabay Aruzhan, Yalalt；一审 Samin、柯炽炜；二审 周宣彤、崔雨旸、高容驷；三审 卢锦章",
+      "source": "STRUCTURED BRIEF credits / RAW NOTES 署名信息"
+    },
+    {
+      "fact": "TOC：Previous 国际青年俱乐部 | APEC智慧校园创新系列竞赛；Next 国际青年俱乐部 | 学业支持：学生心声·同伴之间",
+      "source": "STRUCTURED BRIEF toc / RAW NOTES TOC"
+    }
+  ],
+  "needs_editor": [
+    "请确认英文标题与副标题的最终措辞，以及英文 kicker 是否保留为 APEC | FUTURE SKILLS CHALLENGE。",
+    "请确认四张照片文件名（preliminary-1v1.jpg、final-round.jpg、award-ceremony.jpg 等）与实际上传附件一致，并按需替换为真实文件名与图注。",
+    "请确认是否需要补充颁奖嘉宾、主持人与工作人员的姓名，brief 中未提供。",
+    "请确认「凌怡老师」的英文称谓（Professor Ling）是否符合其职称与本人偏好。",
+    "请确认结语中「系列赛下一场赛事」的表述是否与后续发布节奏一致，如需具体赛事名称请补充。",
+    "请确认发布时是否需要保留「修改于」日期行与微信发布戳记信息。"
+  ]
+}

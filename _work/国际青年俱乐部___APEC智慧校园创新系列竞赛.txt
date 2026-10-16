@@ -1,0 +1,523 @@
+国际青年俱乐部 | APEC智慧校园创新系列竞赛
+Original   国际教育中心 哈工大深圳校区国际教育中心 Jun 16, 2026, 11:29 AM 广东
+
+
+
+
+           近日，哈工大（深圳）国际青年俱乐部（HSIYC）正式推出“APEC智慧校园创新系
+           列”——三场独立竞赛，灵感来自2026年11月深圳承办APEC峰会。
+
+
+           每场竞赛对应亚太共同体的一个核心理念：创新（面向未来的能力）、合作（一起
+           创造解决方案）和开放（拥抱文化多样性）。三场竞赛共同将我们的校园转化为
+           APEC愿景的实践缩影。
+
+
+           HITSZ International Youth Club (HSIYC) proudly launches the APEC Smart
+           Campus Innovation Series – three independent competitions inspired by
+           Shenzhen hosting the APEC Summit in November 2026.
+Each competition reflects a core value of the Asia-Pacific community:
+Innovation (future-ready skills), Cooperation (co-creating solutions together)
+and Openness (embracing cultural diversity). Together, they turn our campus
+into a living example for APEC’s vision.
+
+
+
+
+                           APEC | 未来技能挑战赛
+                     01    Future Skills Challenge
+
+                     Integration Bee Championship
+
+
+
+
+                           INNOVATION
+
+ 随着APEC各经济体竞相迈入AI驱动的新阶段，快速解决复杂问题的能力变得前所
+ 未有的重要。
+
+
+ 本系列竞赛的灵感源自传奇的MIT积分大赛。其中第一场竞赛集中体现APEC的创
+ 新精神——夯实数学基础，而这些基础正是机器学习、数据科学以及整个亚太地
+ 区前沿研究的根基。
+
+
+ As APEC economies race toward an AI‑driven future, the ability to solve
+ complex problems quickly has never been more essential.
+
+
+ Inspired by the legendary MIT Integration Bee. This competition embodies
+ the INNOVATION spirit of APEC – sharpening the mathematical foundations
+ that power machine learning, data science, and cutting‑edge research across
+ the Asia‑Pacific.
+Why should you join?
+为什么你要参加？
+积分是机器学习、人工智能和数据科学的核心。从神经网络的反向传播到概率密
+度函数，每一个算法的背后都离不开你现在所学的积分知识。面向全体在读学
+生！
+ 把期末考试的压力转化为竞赛的动力；
+ 在限时压力下训练解题能力——体验真实的考场氛围，但收获数倍的乐趣；
+ 成为校园里的“积分之王”！
+Integration is the heartbeat of machine learning, AI, and data science. From
+backpropagation in neural networks to probability density functions, every
+algorithm leans on the integrals you learn today. Open to all HITSZ students!
+  Turn exam stress into competition energy.
+  Train your problem-solving skills under time pressure but with a hundred
+  times more fun.
+  Become the ultimate Champion of Integration at HITSZ!
+
+
+                                   活动安排
+                             Event Schedule
+
+                                     预赛：
+                            6月20日（周六）10:00
+                                     决赛：
+                            6月21日（周日）10:00
+
+                            Preliminary Rounds:
+                        10:00 AM, Saturday 20th June
+                                  Final Rounds:
+                         10:00 AM, Sunday 21st June
+
+
+
+
+                                  赛制与规则
+                            Format & Rules
+
+    单败淘汰制（1对1），两人同时解题
+    每场比赛3道积分题（预赛轮）
+    每场比赛胜者=解题正确数更多的一方（若双方均解对，则用时更短者胜；
+    BO3赛制）
+    平局→加赛一题，先答对者获胜
+    禁止使用计算器或任何电子设备
+    由裁判判定谁先作答（根据举手或喊答顺序）
+    裁判的判定为最终结果
+
+
+
+    Single‑elimination bracket (1v1), both participants solve
+    simultaneously
+    Each match: 3 integrals (Preliminary Round)
+    Winner of the match = participant who solved more problems (or
+    faster if both solved correctly; BO3)
+    Tie → sudden‑death integrals: first correct answer wins the match
+    No calculators or electronic devices
+    Judge decides who answered first (based on hand raise/ call)
+    Judges' decisions are final
+适合人群：微积分高手、极限运算控、所有热爱脑力挑战的同学。
+
+Perfect for Calculus masters, speed solvers, and anyone who loves a mental
+adrenaline rush.
+
+
+                                PRIZES | 奖项
+
+
+
+
+每一位站上决赛舞台的选手都将获得专属奖励！冠军将获得高级耳机，亚军及其
+他名次也有精心准备的奖品；所有进入决赛的选手都将获得俱乐部专属纪念品和
+官方获奖证书。
+
+
+此外，所有成功完赛的选手均将获得官方颁发的参与证书。
+
+
+This competition rewards excellence at every level, starting with premium
+headphones for the grand champion and other handpicked prizes for the
+runner-ups - all finalists will receive exclusive club merchandise and an
+official Certificate of Achievement.
+
+
+Additionally, all successfull participants will receive an official Certificate of
+Participation.
+
+Registration QR Code:
+                 02 APEC | 游戏化系统设计大赛
+                    Gamification Competition
+
+                   Campus Gamification Design
+
+
+
+
+                           COOPERATION
+
+随 着 今 年 11 月 APEC 峰 会 落 地 深 圳 ， 合 作 浪 潮 正 重 塑 我 们 的 学 习 、 工 作 与 生 活
+——而游戏化正是推动这一变化最有力的工具之一。本次竞赛邀请校区全体学
+生，运用积分、徽章、排行榜、连续打卡、挑战任务、奖励等机制，解决一个真
+实的校园问题，体现APEC的“合作”精神。鼓励大家使用AI工具。
+
+
+With APEC arriving in Shenzhen this November, cooperation across the Asia-
+Pacific is reshaping how we learn, work, and live — and gamification is one
+of the most powerful tools driving that shift. This competition invites all
+HITSZ students to design a gamified system — using mechanics like points,
+badges, leaderboards, streaks, challenges, and rewards — to solve a real
+campus problem and embody the COOPERATION spirit of APEC. Use of AI
+tools is highly encouraged.
+
+
+
+                                  参赛资格
+                                Eligibility
+
+    面向全体在读学生
+    个人赛，不接受团队报名
+    每人限提交一份作品，须为本人原创
+
+    Open to all currently enrolled HITSZ students
+    Individual submissions only — no team entries
+    One entry per participant; must be original work
+
+
+
+
+COMPETITION TRACKS
+参赛方向
+  学业与技能发展：针对课程学习、技能训练、学业动力的游戏化系统
+  健康与生活方式：鼓励健康习惯和积极生活方式的游戏化健康系统
+  校园生活与社群：促进校园融入、社交互动与社群参与的游戏化体验
+  其他任何与校园相关的创意方向
+
+
+  Academic & Skill Development: Gamified system for coursework, skill-
+  building, and academic motivation
+  Health & Wellbeing: Gamified wellness system encouraging healthy
+  habits and positive lifestyle choices
+  Campus Life & Community: Gamified experience for campus integration,
+  social engagement, or community contribution
+  Or any other campus-related idea
+
+
+
+
+PRELIMINARY LECTURE
+先修讲座
+在正式比赛开始前，我们安排了一场专属的赛前讲座，帮助每位参赛者提前进入
+状态。座位有限，请尽快报名。
+
+
+更多详情：         https://mp.weixin.qq.com/s/hsLsjUSCDBW5qgknZ5--kg?
+scene=1
+
+
+Before the competition opens, we've arranged an exclusive preliminary
+lecture to give every participant a real head start. Seats are limited —
+register early.
+For more info:   https://mp.weixin.qq.com/s/hsLsjUSCDBW5qgknZ5--kg?
+scene=1
+
+
+
+                                讲座信息
+                            Lecture Details
+
+  时间：6月15日 12:30 - 13:30
+  地点：A509
+
+  Date & Time: June 15, 12:30-13:30
+  Venue: A509
+
+
+
+
+Lecture Registration QR Code:
+
+
+
+
+                                 参赛要求
+                              Submission
+
+  提交一份演示视频，作为附件发送至邮箱：iyc.hitsz@outlook.com
+
+ 演示视频:
+    格式：MP4，时长不超过 5 分钟
+    文件命名：SC-学号-Demo.mp4（例：SC-202433xxxx-Demo.mp4）
+ 系统设计说明:
+    格式：PDF 或 DOCX，不超过两页
+    文件命名：SC-学号-Purpose.pdf
+    下载模板：https://www.alipan.com/s/k7sjwpmtMnm
+ 邮件要求:
+    邮件正文附上公开 GitHub 仓库链接，并注明姓名、学号及联系电话
+    邮件主题：SC-学号
+ 截止时间：23:59，6月21日
+
+
+  Submit one demo video as a direct email attachment
+  to iyc.hitsz@outlook.com
+
+  Demo Video:
+      Format: MP4，no more than 5 minutes
+      File name: SC-StudentID-Demo.mp4 (e.g., SC-202433xxxx-Demo.mp4)
+  System Purpose Document:
+      Format: PDF or DOCX, max 2 pages
+      File name: SC-StudentID-Purpose.pdf
+      Download Template: https://www.alipan.com/s/k7sjwpmtMnm
+  Email Requirements：
+      Include a public GitHub repository link in the email body, along with
+      your name, student ID, and phone number
+      Email subject: SC-StudentID
+  Deadline: 23:59, June 21
+
+
+
+DEMO VIDEO STRUCTURE
+演示视频结构
+视频须按以下顺序呈现：
+1. 参赛者介绍—静态标题页（至少3秒），包含姓名、学号、专业及年级、手机
+  号
+2. 系统架构—仅展示图表，不得使用大段文字或配音讲解的幻灯片；呈现主要组
+  件、连接方式及整体系统逻辑
+3. 游戏化机制演示 — 核心环节，评分权重最高；机制须在屏幕上实时运行，不
+  得使用屏幕文字或说明覆层
+4. 附加内容（可选）—界面演示或结束语，时长不得超过视频总时长的三分之一
+
+The video must follow this order:
+1. Participant Introduction — Still title slide (min. 3 sec) with name, student
+  ID, major and year, and phone number
+2. System Architecture — Diagram only — no text blocks or narrated slides;
+  show main components, how they connect, and overall system logic
+3. Gamification Mechanics Demonstration — The core section, highest
+  judging weight; mechanics must run live on screen
+4. Additional Content (Optional) — Interface walkthrough or closing
+  remarks; must not exceed one-third of total video duration
+
+JUDING CRITERIA
+评审标准
+
+本次竞赛的核心要求是：所提交的系统必须以游戏化作为其主要设计方式。游戏
+化是指将游戏设计元素与机制，如积分、徽章、排行榜、连击、挑战与奖励等应
+用于非游戏场景，以激励用户产生积极行为。
+
+游戏化功能须通过实际用户操作进行演示（实时互动，而非静态展示）。例如：
+  用户通过特定操作获得积分、经验值或货币
+  徽章、成就或奖励被解锁
+  排行榜实时更新或展示竞争排名
+  升级、段位进阶或里程碑达成
+  连击、挑战或任务的追踪与完成
+
+The core requirement of this competition is that the proposed system must
+use gamification as its primary approach. Gamification refers to the
+application of game-design elements and mechanics — such as points,
+badges, leaderboards, streaks, challenges, and rewards — in a non-game
+context to motivate and engage users toward positive behaviors.
+
+Gamified functions should be demonstrated based on actions (live
+interaction, not static display). For example:
+  A user earning points, XP, or currency through a specific action
+  A badge, achievement, or reward being unlocked
+  A leaderboard updating or displaying competitive standing
+  A level-up, rank progression, or milestone being reached
+  A streak, challenge, or quest being tracked or completed
+
+
+ 作品质量与演示清晰度比视频制作水准更重要；系统无需达到生产级别，但必须能
+ 够运行并清晰展示游戏化机制
+
+  Idea quality and demo clarity matter more than production perfection; the
+  system must function and clearly demonstrate gamification mechanics in
+  action.
+
+
+
+ 内容规范
+
+ 一、所有作品须严格遵守国家法律法规，坚持正确的政治方向、舆论导向和价
+ 值取向，积极培育和践行社会主义核心价值观。
+ 二、作品内容应健康向上、主题鲜明，格调高雅，拒绝低俗、庸俗、媚俗之
+ 风，注重科学性与真实性，避免常识性错误和虚假信息。
+ 三、作品须为原创或已获得合法授权，严禁抄袭、剽窃、洗稿等侵犯他人知识
+ 产权的行为。引用他人作品应注明出处
+ Content Guidelines
+
+ 1. All works must strictly comply with national laws and regulations,
+ uphold the correct political direction, public opinion orientation, and
+ value orientation, and actively cultivate and practice the core socialist
+ values.
+ 2. The content of works shall be healthy, uplifting, and thematically clear,
+ with refined and elegant taste. It must reject vulgarity, kitsch, and fawning
+ tendencies, emphasize scientific accuracy and authenticity, and avoid
+ common factual errors and false information.
+ 3. Works must be original or legally authorized; plagiarism, appropriation,
+ content laundering, or any other infringement of intellectual property
+ rights is strictly prohibited. Citations from others' works must indicate the
+ source.
+
+
+                              PRIZES | 奖项
+
+
+
+
+本次竞赛的前三名优胜者，将分别获得一份精选的数码配件礼包、社团专属纪念
+品以及官方获奖证书。
+
+
+此外，所有有效提交作品的参赛者均可获得官方参赛证书。
+
+
+The top three winners of this competition. Each winner will receive a
+specially curated package of handpicked gadgets, exclusive club
+merchandise, and an official Certificate of Achievement.
+ Additionally, all participants with a valid submission will receive an official
+ Certificate of Participation.
+
+
+
+
+                           APEC | 校园想象画廊
+                   03 Campus Imagination Gallery
+                                              Campus Artwork Competition
+
+
+
+
+                                 OPENNESS
+
+APEC的21个经济体各自拥有独特的传统、艺术与故事。“开放”意味着将这种多样性
+融入我们的日常生活。我们不禁想问：假如我们的校园真正融合了整个APEC世界的
+多元文化，它会是什么样子？
+
+
+本次竞赛体现的正是APEC的开放精神。请使用AI工具（或手绘）创作3-5张图像，
+将真实校园场景与任一APEC经济体的文化元素相融合，展现开放之美。
+
+
+The APEC family spans 21 economies, each with unique traditions, art, and
+stories. Openness means welcoming that diversity into our daily lives. So we
+ask: what would our campus look like if it truly belonged to the entire APEC
+world?
+
+
+This competition embodies the OPENNESS spirit of APEC. Use AI (or your own
+hand) to create 3–5 images that fuse real HITSZ scenes with cultural elements
+from any APEC member economy. Show us the beauty of openness.
+AI工具正在重新定义视觉创意的边界。本次竞赛专为校区国际学生设计，只有一个
+创作规则：每张图像必须同时包含真实校园场景和一个APEC成员经济体的文化元素
+——艺术风格不限。以此展现我们共同的校园，以及我们身后的多元世界。
+
+AI tools are redefining the boundaries of visual creativity. Designed for
+international students at HITSZ, this competition has one creative rule: every
+image must bring together a real HITSZ campus scene and the culture of an
+APEC member economy — in ANY ARTISTIC STYLE you choose. Celebrate the
+campus we share and the diverse worlds we each come from.
+
+                         参赛要求 | Submission
+   填写提交表格
+   提交 3-5 张与校园相关的图片（AI 生成、手绘或两者结合）
+   格式：自由风格；每张图片可任意选用任何艺术风格或创作方向
+   期限：6月22日23:59
+
+   Complete the Submission Form
+   Submit 3-5 images (AI-generated, hand-drawn, or a combination) - the
+   more, the better
+   Each image must show both a HITSZ campus scene and an APEC economy
+   theme — any artistic style is allowed
+   Deadline: 23:59, June 22
+
+
+
+
+JUDING CRITERIA
+评审标准
+
+ 所有符合提交要求的作品都将根据以下三个主要标准进行评分：创意性、视觉
+ 性、校园特色。
+
+ All works meeting the submission requirements are scored across the
+ following three main criteria: Creativity, Visual Impact, Campus Identity.
+
+内容规范
+
+一、所有作品须严格遵守国家法律法规，坚持正确的政治方向、舆论导向和价值
+取向，积极培育和践行社会主义核心价值观。
+二、作品内容应健康向上、主题鲜明，格调高雅，拒绝低俗、庸俗、媚俗之风，
+注重科学性与真实性，避免常识性错误和虚假信息。
+三、作品须为原创或已获得合法授权，严禁抄袭、剽窃、洗稿等侵犯他人知识产
+权的行为。引用他人作品应注明出处
+
+Content Guidelines
+
+1. All works must strictly comply with national laws and regulations, uphold
+the correct political direction, public opinion orientation, and value
+orientation, and actively cultivate and practice the core socialist values.
+2. The content of works shall be healthy, uplifting, and thematically clear,
+with refined and elegant taste. It must reject vulgarity, kitsch, and fawning
+tendencies, emphasize scientific accuracy and authenticity, and avoid
+common factual errors and false information.
+3. Works must be original or legally authorized; plagiarism, appropriation,
+content laundering, or any other infringement of intellectual property rights
+is strictly prohibited. Citations from others' works must indicate the source.
+
+
+                               PRIZES | 奖项
+三位优胜者将分别获得俱乐部专属纪念品和获奖证书，其中冠军还将额外获得专业
+绘图板一块，助力持续创作。
+
+
+此外，所有有效提交作品的参赛者均可获得官方参赛证书。
+
+
+All three winning creators take home exclusive club merchandise and a
+Certificate of Achievement, with the top winner also receiving a professional
+drawing tablet to fuel their next masterpiece.
+
+
+Additionally, all participants with a valid submission will receive an official
+Certificate of Participation.
+
+
+Submission QR Code:
+                                           鸣谢
+                                       国际教育中心
+
+                                   Acknowledgments
+                               International Education Center
+
+
+
+
+Join our WeChat Group for Event Notices!
+
+所有后续活动信息都将在这里发布。立即加入，不错过任何获得！
+
+All upcoming event information will be shared here. Don't miss any updates. Join now!
+邮箱：iyc.hitsz@outlook.com
+You can also contact us at: iyc.hitsz@outlook.com
+
+
+
+本文最终解释权归哈尔滨工业大学（深圳）国际青年俱乐部（HSIYC）与国际教育中心所有。
+
+Final interpretation of all program content and rules is reserved by The HITSZ International
+Youth Club (HSIYC) and the International Education Center.
+
+
+
+                                哈工大（深圳）国际青年俱乐部
+                              HITSZ International Youth Club
+                              AcademiaSphere x Nexus Hive
+
+
+
+
+ 图文 | Yalalt
+ 排版 | Yalalt
+ 一审 | Samin, 柯炽炜
+ 二审 | 周宣彤，崔雨旸，高容驷
+ 三审 | 卢锦章
+
+
+
+
+活动资讯 · Table of Contents
+
+ Previous                                                                                Next
+APEC青年行 | 志愿活动预告：第二期中外学生                           2026国际新生迎新志愿者招募 | Let's Join the
+应急救护培训                                                    2026 International New Students
+
